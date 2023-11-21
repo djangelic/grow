@@ -35,6 +35,12 @@
         }
     </style>
     <title>Liberty Haze and Amnesia update - The Smoking Lion Bud Blog</title>
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Liberty Haze and Amnesia update" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="liberty-haze-and-amnesia-update" />
+    <meta property="og:description" content="" />
 </head>
 <body>
 
@@ -57,13 +63,14 @@
                 <strong>Updated At：</strong><time datetime="1695500571094">2023-09-23 13:22</time>
             </div>
             
-            <div>
-                <strong>Tags: </strong>
-                <span class="keyword badge badge-info">grow - liberty haze</span>
-                
-                <span class="keyword badge badge-info">grow - amnesia</span>
-                
-            </div>
+                <div>
+                    <strong>Tags: </strong>
+                    
+                    <a href="/tag?tag=grow%20-%20liberty%20haze" class="keyword badge badge-info">grow - liberty haze</a>
+                    
+                    <a href="/tag?tag=grow%20-%20amnesia" class="keyword badge badge-info">grow - amnesia</a>
+                    
+                </div>                
             
         </div>
     </div>
@@ -81,12 +88,29 @@
         </div>
     </div>
 
+<!-- Giscus Comments Section -->
+
+
     <!-- Return to Home Button -->
     <div class="row justify-content-center mt-4">
         <a href="/archives" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Back to Articles</a>
+        <a href="/subscribe" class="btn btn-outline-info btn-lg" style="margin-bottom: 20px;">Subscribe by Email</a>
     </div>
 </div>
 
+
 <!-- Bootstrap core JavaScript -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const articleContent = document.querySelector('.article-content');
+      articleContent.innerHTML = articleContent.innerHTML.replace(
+        /<a[^>]*href="https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)"[^>]*>.*?<\/a>/g,
+        '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></center>'
+      );
+    });
+  </script>  
+</body>
+</html>
