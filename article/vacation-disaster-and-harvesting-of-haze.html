@@ -18,59 +18,84 @@
       font-family: 'Open Sans', sans-serif;
       background-color: #292c30 !important;
       background-image: none !important;
-      background-size: cover; /* Adjust as needed */
+      background-size: cover;
+      /* Adjust as needed */
     }
-  
+
     /* Apply the border-radius to all <img> elements */
     .custombody img {
+      max-width: 100%;
+      /* Image can be as wide as its container, but no wider */
+      height: auto;
+      /* Height is set to auto to maintain the aspect ratio */
       border-radius: 20px;
+      /* Your existing border-radius */
     }
-  
-    .custombody h1, .custombody h2, .custombody h3, .custombody h4, .custombody h5, .custombody h6 {
+
+
+    .custombody h1,
+    .custombody h2,
+    .custombody h3,
+    .custombody h4,
+    .custombody h5,
+    .custombody h6 {
       color: #fcca20;
     }
-  
-    .custombody p, .custombody .article-info, .custombody .article-info strong, .custombody .article-info time {
+
+    .custombody p,
+    .custombody .article-info,
+    .custombody .article-info strong,
+    .custombody .article-info time {
       color: #FFFFFF;
     }
-  
+
     .custombody a {
       color: #ffcd34;
     }
-  
+
     .custombody .keyword.badge.badge-info {
       background-color: #fcca20 !important;
       color: #211d1d !important;
       border-color: #fcca20 !important;
     }
-  
+
     .custombody .keyword.badge.badge-info:hover {
       background-color: #83171c !important;
       color: white !important;
     }
-  
+
     /* ... other styles ... */
-  
+
     /* Mobile-specific styles */
     @media (max-width: 576px) {
-      .custombody h1, .custombody h2, .custombody h3, .custombody h4, .custombody h5, .custombody h6 {
+
+      .custombody h1,
+      .custombody h2,
+      .custombody h3,
+      .custombody h4,
+      .custombody h5,
+      .custombody h6 {
         color: #fcca20 !important;
       }
-  
-      .custombody, .custombody p, .custombody .article-info, .custombody .article-info strong, .custombody .article-info time {
+
+      .custombody,
+      .custombody p,
+      .custombody .article-info,
+      .custombody .article-info strong,
+      .custombody .article-info time {
         color: #FFFFFF !important;
       }
-  
+
       .custombody a {
         color: #ffcd34 !important;
       }
-  
+
       .custombody img {
         border-radius: 20px;
       }
     }
   </style>
-  
+
   <title>
     Vacation Disaster and harvesting of Haze - The Smoking Lion Bud Blog
   </title>
