@@ -72,10 +72,31 @@
       padding-right: 15px;
     }
 
+    /* Mobile-specific styles for headers */
     @media (max-width: 576px) {
-      .container {
-        padding-left: 15px;
-        padding-right: 15px;
+
+      .custombody h1,
+      .custombody h2,
+      .custombody h3,
+      .custombody h4,
+      .custombody h5,
+      .custombody h6 {
+        color: #fcca20 !important;
+        /* Replace #headerColor with the color for headers */
+      }
+    }
+
+    /* Mobile-specific styles for content */
+    @media (max-width: 576px) {
+
+      .custombody,
+      .custombody p,
+      .custombody .article-info,
+      .custombody .article-info strong,
+      .custombody .article-info time,
+      .custombody a {
+        color: #FFFFFF !important;
+        /* Replace #contentColor with the color for content */
       }
     }
   </style>
