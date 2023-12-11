@@ -16,227 +16,61 @@
   <style type="text/css">
     .custombody {
       font-family: 'Open Sans', sans-serif;
-
-      img {
-        /* Apply the border-radius to all <img> elements */
-        /* If site.imageradius has a value, it will be used; otherwise, default to 0 */
-        border-radius: 20px;
-      }
-
-      /* Style for .keyword.badge.badge-info */
-      .custombody .keyword.badge.badge-info {
-        background-color: #fcca20 !important;
-        /* Button background color */
-        color: #211d1d !important;
-        /* Button text color */
-        border-color: #fcca20 !important;
-        /* Button outline color */
-      }
-
-      /* Hover state for .keyword.badge.badge-info */
-      .custombody .keyword.badge.badge-info:hover {
-        background-color: #83171c !important;
-        /* Button hover background color */
-        color: white !important;
-        /* Button text hover color */
-      }
-
       background-color: #292c30 !important;
-        
-
-      /* Targeting header tags */
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        color: #fcca20;
-        /* Set header text color */
-      }
-
-      /* Targeting paragraph tags */
-      p {
-        color: #FFFFFF;
-        /* Set content text color */
-      }
-
-      /* Targeting specific elements within .article-info */
-      .article-info,
-      .article-info strong,
-      .article-info time {
-        color: #FFFFFF;
-        /* Set text color for elements in .article-info */
-      }
-
-      /* Targeting all links */
-      a {
-        color: #ffcd34;
-        /* Set link text color */
-      }
-
-      /* If you want to specifically style the .keyword links differently */
-      .article-info a.keyword {
-        /* Additional styles for .keyword links, if needed */
-      }
+      background-image: none !important;
+      background-size: cover; /* Adjust as needed */
     }
-
-
-    .article-content img {
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+  
+    /* Apply the border-radius to all <img> elements */
+    .custombody img {
+      border-radius: 20px;
     }
-
-    .article-content {
-      padding-left: 15px;
-      padding-right: 15px;
+  
+    .custombody h1, .custombody h2, .custombody h3, .custombody h4, .custombody h5, .custombody h6 {
+      color: #fcca20;
     }
-
-    /* Normal Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn,
-    .border {
-      background-color: #fcca20 !important;
+  
+    .custombody p, .custombody .article-info, .custombody .article-info strong, .custombody .article-info time {
+      color: #FFFFFF;
     }
-
-    /* Normal Button - Variables: buttonTextColor,
-    buttonBackgroundColor,
-    themeColor */
-    .btn.btn-outline-info,
-    img.rounded-circle.img-thumbnail.border {
-      background-color: transparent !important;
-      border-color: #fcca20 !important;
-      color: #211d1d !important;
+  
+    .custombody a {
+      color: #ffcd34;
     }
-
-    /* Hover Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn.btn-outline-info:hover {
-      background-color: #fcca20 !important;
-      border-color: #fcca20 !important;
-      color: white !important;
-    }
-
-    /* Normal Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn.custom {
+  
+    .custombody .keyword.badge.badge-info {
       background-color: #fcca20 !important;
       color: #211d1d !important;
+      border-color: #fcca20 !important;
     }
-
-    /* Hover Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn.custom:hover {
+  
+    .custombody .keyword.badge.badge-info:hover {
       background-color: #83171c !important;
       color: white !important;
     }
-
-    /* Mobile-specific styles for headers */
+  
+    /* ... other styles ... */
+  
+    /* Mobile-specific styles */
     @media (max-width: 576px) {
-
-      .custombody h1,
-      .custombody h2,
-      .custombody h3,
-      .custombody h4,
-      .custombody h5,
-      .custombody h6 {
+      .custombody h1, .custombody h2, .custombody h3, .custombody h4, .custombody h5, .custombody h6 {
         color: #fcca20 !important;
-        /* Replace #headerColor with the color for headers */
       }
-    }
-
-    /* Mobile-specific styles for content */
-    @media (max-width: 576px) {
-
-      .custombody,
-      .custombody p,
-      .custombody .article-info,
-      .custombody .article-info strong,
-      .custombody .article-info time {
+  
+      .custombody, .custombody p, .custombody .article-info, .custombody .article-info strong, .custombody .article-info time {
         color: #FFFFFF !important;
-        /* Replace #contentColor with the color for content */
       }
-
+  
       .custombody a {
         color: #ffcd34 !important;
-        /* Set link text color using EJS variable */
       }
-
-      /* Style for .keyword.badge.badge-info */
-      .custombody .keyword.badge.badge-info {
-        background-color: #fcca20 !important;
-        /* Button background color */
-        color: #211d1d !important;
-        /* Button text color */
-        border-color: #fcca20 !important;
-        /* Button outline color */
-      }
-
-      /* Hover state for .keyword.badge.badge-info */
-      .custombody .keyword.badge.badge-info:hover {
-        background-color: #83171c !important;
-        /* Button hover background color */
-        color: white !important;
-        /* Button text hover color */
-      }
-
-      /* Normal Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn,
-    .border {
-      background-color: #fcca20 !important;
-    }
-
-    /* Normal Button - Variables: buttonTextColor,
-    buttonBackgroundColor,
-    themeColor */
-    .btn.btn-outline-info,
-    img.rounded-circle.img-thumbnail.border {
-      background-color: transparent !important;
-      border-color: #fcca20 !important;
-      color: #211d1d !important;
-    }
-
-    /* Hover Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn.btn-outline-info:hover {
-      background-color: #fcca20 !important;
-      border-color: #fcca20 !important;
-      color: white !important;
-    }
-
-    /* Normal Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn.custom {
-      background-color: #fcca20 !important;
-      color: #211d1d !important;
-    }
-
-    /* Hover Button - Variables: buttonTextHoverColor,
-    buttonHoverBackgroundColor,
-    themeColor */
-    .btn.custom:hover {
-      background-color: #83171c !important;
-      color: white !important;
-    }
-
-      img {
+  
+      .custombody img {
         border-radius: 20px;
       }
-
     }
   </style>
+  
   <title>
     Growing like weeds - The Smoking Lion Bud Blog
   </title>
