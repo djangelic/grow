@@ -14,31 +14,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
   <style type="text/css">
-    body.custombody {
+    .custombody {
+      color: #FFFFFF !important;
       font-family: 'Open Sans', sans-serif;
       background-color: #292c30 !important;
       background-image: none !important;
       background-size: cover;
-      /* Adjust as needed */
+      text-align: center;
     }
-
-    .custombody .article-content table {
-      color: #FFFFFF;
-      /* Replace with your desired text color */
-      background-color: #292c30;
-      /* Replace with your desired background color */
-    }
-
-    /* Apply the border-radius to all <img> elements */
-    .custombody img {
-      max-width: 100%;
-      /* Image can be as wide as its container, but no wider */
-      height: auto;
-      /* Height is set to auto to maintain the aspect ratio */
-      border-radius: 20px;
-      /* Your existing border-radius */
-    }
-
 
     .custombody h1,
     .custombody h2,
@@ -56,25 +39,82 @@
       color: #FFFFFF;
     }
 
-    .custombody a {
+    .custombody img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: px !important;
+      height: px !important;
+    }
+
+    .btn,
+    .border {
+      background-color: #fcca20 !important;
+    }
+
+    .btn.btn-outline-info,
+    img.rounded-circle.img-thumbnail.border,
+    .btn-lg {
+      background-color: transparent !important;
+      color: #211d1d !important;
+      border-color: #fcca20 !important;
+      border-radius: 5px;
+    }
+
+    .btn.btn-outline-info:hover {
+      background-color: #fcca20 !important;
+      color: white !important;
+      border-color: #fcca20 !important;
+    }
+
+    .btn.custom {
+      background-color: #fcca20 !important;
+      color: #211d1d !important;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #FFFFFF !important;
+      background-color: #292c30 !important;
+      background-image: url() !important;
+    }
+
+    body.custombody {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #292c30 !important;
+      background-image: none !important;
+      background-size: cover;
+    }
+
+    .custombody .article-content table {
+      color: #FFFFFF;
+      background-color: #292c30 transparent;
+    }
+
+    .custombody a,
+    body a {
       color: #ffcd34;
     }
 
-    .custombody .keyword.badge.badge-info {
+    .custombody .keyword.badge.badge-info,
+    body .keyword.badge.badge-info {
       background-color: #fcca20 !important;
       color: #211d1d !important;
       border-color: #fcca20 !important;
     }
 
-    .custombody .keyword.badge.badge-info:hover {
+    .custombody .keyword.badge.badge-info:hover,
+    .btn.custom:hover,
+    body .keyword.badge.badge-info:hover {
       background-color: #83171c !important;
       color: white !important;
     }
 
-    /* ... other styles ... */
-
-    /* Mobile-specific styles */
-    @media (max-width: 576px) {
+    @media max-width 576px {
 
       .custombody h1,
       .custombody h2,
@@ -101,6 +141,39 @@
         border-radius: 5px;
       }
     }
+
+    /* Custom Navbar Styles */
+    .navbar-custom {
+      background-color: #fcca20;
+      /* Navbar background */
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+      color: #211d1d;
+      /* Nav item color */
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover,
+    .navbar-custom .navbar-nav .nav-link.active {
+      background-color: #83171c;
+      /* Nav item hover and active background */
+      color: #fff;
+    }
+
+    .navbar-brand {
+      color: #000000 !important;
+      /* Site name color */
+    }
+
+    /* If there's a navigation image URL, additional styling might be needed */
+    .navbar-brand {
+        background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
+        background-size: 24px 30px;
+        padding-left: 39px;
+        /* Adjust padding based on image width */
+      }
+
+      
   </style>
 
   <title>
@@ -114,16 +187,38 @@
   <meta property="og:url" content="https://grow.thesmokinglion.com/article/prepping-soil-for-amnesia-seedlings-to-transplant" />
   <meta property="og:description" content="Yesterday I realized I had a piece of wood laying around that was the perfect width for the shelf slot on my Costco shed. I cut it to the right length, and bam I have a gardening shelf in my bike shed" />
 </head>
+<!-- Bootstrap Navbar with Custom Class -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">The Smoking Lion Bud Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link " href="archives">
+            Archives
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link " href="about">
+            About
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <body class="custombody">
 
   <div class="container mt-4">
 
-    <!-- Navigation Bar -->
-    <nav class="navigation">
-      <a href="/">Home | </a>
-      <a href="/archives">Articles</a>
-    </nav>
+
 
     <!-- Blog Title and Info -->
     <div class="row justify-content-center">

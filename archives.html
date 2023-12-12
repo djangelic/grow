@@ -11,6 +11,66 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <style type="text/css">
+    .custombody {
+      color: #FFFFFF !important;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #292c30 !important;
+      background-image: none !important;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .custombody h1,
+    .custombody h2,
+    .custombody h3,
+    .custombody h4,
+    .custombody h5,
+    .custombody h6 {
+      color: #fcca20;
+    }
+
+    .custombody p,
+    .custombody .article-info,
+    .custombody .article-info strong,
+    .custombody .article-info time {
+      color: #FFFFFF;
+    }
+
+    .custombody img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: px !important;
+      height: px !important;
+    }
+
+    .btn,
+    .border {
+      background-color: #fcca20 !important;
+    }
+
+    .btn.btn-outline-info,
+    img.rounded-circle.img-thumbnail.border {
+      background-color: transparent !important;
+      color: #211d1d !important;
+      border-color: #fcca20 !important;
+    }
+
+    .btn.btn-outline-info:hover {
+      background-color: #fcca20 !important;
+      color: white !important;
+      border-color: #fcca20 !important;
+    }
+
+    .btn.custom {
+      background-color: #fcca20 !important;
+      color: #211d1d !important;
+    }
+
     body {
       font-family: 'Open Sans', sans-serif;
       color: #FFFFFF !important;
@@ -18,19 +78,63 @@
       background-image: url() !important;
     }
 
+    body.custombody {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #292c30 !important;
+      background-image: none !important;
+      background-size: cover;
+    }
+
+    .custombody .article-content table {
+      color: #FFFFFF;
+      background-color: #292c30 transparent;
+    }
+
+    .custombody a,
     body a {
       color: #ffcd34;
     }
 
+    .custombody .keyword.badge.badge-info,
     body .keyword.badge.badge-info {
       background-color: #fcca20 !important;
       color: #211d1d !important;
       border-color: #fcca20 !important;
     }
 
+    .custombody .keyword.badge.badge-info:hover,
+    .btn.custom:hover,
     body .keyword.badge.badge-info:hover {
       background-color: #83171c !important;
       color: white !important;
+    }
+
+    @media max-width 576px {
+
+      .custombody h1,
+      .custombody h2,
+      .custombody h3,
+      .custombody h4,
+      .custombody h5,
+      .custombody h6 {
+        color: #fcca20 !important;
+      }
+
+      .custombody,
+      .custombody p,
+      .custombody .article-info,
+      .custombody .article-info strong,
+      .custombody .article-info time {
+        color: #FFFFFF !important;
+      }
+
+      .custombody a {
+        color: #ffcd34 !important;
+      }
+
+      .custombody img {
+        border-radius: 5px;
+      }
     }
   </style>
   <title>Archives - The Smoking Lion Bud Blog</title>
