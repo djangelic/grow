@@ -5,8 +5,237 @@
   <!-- ... other head tags ... -->
 
   <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://djangelic.github.io/pages/instagram.css">
-  
+  <style type="text/css">
+    .custombody {
+      color: #FFFFFF !important;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #292c30 !important;
+      background-image: none !important;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .custombody h1,
+    .custombody h2,
+    .custombody h3,
+    .custombody h4,
+    .custombody h5,
+    .custombody h6 {
+      color: #fcca20;
+    }
+
+    .custombody p,
+    .custombody .article-info,
+    .custombody .article-info strong,
+    .custombody .article-info time {
+      color: #FFFFFF;
+    }
+
+    .custombody img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: px !important;
+      height: px !important;
+    }
+
+    .btn,
+    .border {
+      background-color: #fcca20 !important;
+    }
+
+    .btn.btn-outline-info,
+    img.rounded-circle.img-thumbnail.border,
+    .btn-lg {
+      background-color: transparent !important;
+      color: #211d1d !important;
+      border-color: #fcca20 !important;
+      border-radius: 5px;
+    }
+
+    .btn.btn-outline-info:hover {
+      background-color: #fcca20 !important;
+      color: white !important;
+      border-color: #fcca20 !important;
+    }
+
+    .btn.custom {
+      background-color: #fcca20 !important;
+      color: #211d1d !important;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #FFFFFF !important;
+      background-color: #292c30 !important;
+      background-image: url() !important;
+    }
+
+    body.custombody {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #292c30 !important;
+      background-image: none !important;
+      background-size: cover;
+    }
+
+    .custombody .article-content table {
+      color: #FFFFFF;
+      background-color: #292c30 transparent;
+    }
+
+    .custombody a,
+    body a {
+      color: #ffcd34;
+    }
+
+    .btn-custom-margin {
+      margin-top: 4px;
+      /* 8px margin on the top */
+      margin-bottom: 4px;
+      /* 8px margin on the bottom */
+      /* Add horizontal margins if needed */
+      margin-left: 4px;
+      /* 8px margin on the left */
+      margin-right: 4px;
+      /* 8px margin on the right */
+    }
+
+    .row.no-gutter {
+      --bs-gutter-x: 0;
+    }
+
+    .custombody .keyword.badge.badge-info,
+    body .keyword.badge.badge-info {
+      background-color: #fcca20 !important;
+      color: #211d1d !important;
+      border-color: #fcca20 !important;
+    }
+
+    .custombody .keyword.badge.badge-info:hover,
+    .btn.custom:hover,
+    body .keyword.badge.badge-info:hover {
+      background-color: #83171c !important;
+      color: white !important;
+    }
+
+    @media max-width 576px {
+
+      .custombody h1,
+      .custombody h2,
+      .custombody h3,
+      .custombody h4,
+      .custombody h5,
+      .custombody h6 {
+        color: #fcca20 !important;
+      }
+
+      .custombody,
+      .custombody p,
+      .custombody .article-info,
+      .custombody .article-info strong,
+      .custombody .article-info time {
+        color: #FFFFFF !important;
+      }
+
+      .custombody a {
+        color: #ffcd34 !important;
+      }
+
+      .custombody img {
+        border-radius: 5px;
+      }
+    }
+
+    /* Custom Navbar Styles */
+    .navbar-custom {
+      background-color: #fcca20;
+      font-family: 'Open Sans', sans-serif;
+      /* Navbar background */
+    }
+
+    /* Core navbar-brand style */
+    .navbar-brand {
+      color: #000000 !important;
+      /* Site name color */
+      /* Additional non-conditional styles here if necessary */
+    }
+
+    /* Conditional styling for navigation image */
+    .navbar-brand {
+        background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
+        background-size: 30px 50px;
+        padding-left: 45px;
+        /* Adjust padding */
+      }
+
+      
+
+    /* Navbar link styles */
+    .navbar-custom .navbar-nav .nav-link {
+      color: #211d1d;
+      /* Nav item color */
+      padding-top: 0.5rem;
+      /* Adjust top padding */
+      padding-bottom: 0.5rem;
+      /* Adjust bottom padding */
+      border-radius: 5px;
+    }
+
+    .navbar-custom .navbar-nav .nav-link:hover,
+    .navbar-custom .navbar-nav .nav-link.active {
+      background-color: #83171c;
+      /* Nav item hover and active background */
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    /* Navbar toggler icon style */
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* For mobile screens, center the collapsed navbar content */
+    @media (max-width: 991px) {
+      .navbar-custom .navbar-nav {
+        flex-direction: column;
+        /* Stack nav items vertically */
+        width: 100%;
+        /* Full width of nav items */
+      }
+
+      .navbar-custom .navbar-nav .nav-item,
+      .navbar-custom .navbar-nav .nav-link {
+        width: 100%;
+        /* Full width for each item */
+        text-align: center;
+        /* Center text for each item */
+      }
+    }
+
+    /* For desktop screens, align the menu items to the left next to the brand */
+    @media (min-width: 992px) {
+      .navbar-custom .navbar-nav {
+        flex-direction: row;
+        /* Align nav items in a row */
+        justify-content: flex-start;
+        /* Align nav items to the start (left) */
+      }
+
+      .navbar-custom .navbar-nav .nav-item {
+        margin-right: .5rem;
+        /* Space between nav items */
+      }
+
+      /* Remove specific width settings on desktop for .nav-item and .nav-link */
+    }
+  </style>
+
   <!-- External JavaScript -->
   <script src="https://djangelic.github.io/pages/instagram.js"></script>
 </head>
@@ -57,299 +286,299 @@
     <div class="container">
       <div class="gallery">
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/eaf43d6792c04082af35c0dea3cb84d7.JPG" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Vacation Disaster and harvesting of Haze</li>
-                <li><strong>Date:</strong> December 10th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - harvest, grow - northern lights, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/eaf43d6792c04082af35c0dea3cb84d7.JPG" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Vacation Disaster and harvesting of Haze</li>
+              <li><strong>Date:</strong> December 10th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - harvest, grow - northern lights, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Almost Harvest time for Haze</li>
-                <li><strong>Date:</strong> November 24th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Almost Harvest time for Haze</li>
+              <li><strong>Date:</strong> November 24th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/e721ff65e18a476aa2bb3b633ca1180a.JPG" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Growing like weeds</li>
-                <li><strong>Date:</strong> November 22nd, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/e721ff65e18a476aa2bb3b633ca1180a.JPG" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Growing like weeds</li>
+              <li><strong>Date:</strong> November 22nd, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/9f81aa28f2a54ab7a38d6f25b8a1b8cc.png" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Haircut for the ladies</li>
-                <li><strong>Date:</strong> November 19th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/9f81aa28f2a54ab7a38d6f25b8a1b8cc.png" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Haircut for the ladies</li>
+              <li><strong>Date:</strong> November 19th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/b092b227f6bd4a62942d528ec31b6fd7.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> New Seeds have arrived!</li>
-                <li><strong>Date:</strong> November 11th, 2023</li>
-                <li><strong>Tags:</strong> grow - northern lights, grow - amnesia, grow - white widow</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/b092b227f6bd4a62942d528ec31b6fd7.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> New Seeds have arrived!</li>
+              <li><strong>Date:</strong> November 11th, 2023</li>
+              <li><strong>Tags:</strong> grow - northern lights, grow - amnesia, grow - white widow</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/71b0e9c7552049b1bb9d493e7a680fce.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Automated Water tank refill</li>
-                <li><strong>Date:</strong> November 4th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - amnesia, grow - northern lights</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/71b0e9c7552049b1bb9d493e7a680fce.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Automated Water tank refill</li>
+              <li><strong>Date:</strong> November 4th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - amnesia, grow - northern lights</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/4ee43cbe335f4f54b9a8431a07af0ed7.JPG" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Automation Nation</li>
-                <li><strong>Date:</strong> October 25th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/4ee43cbe335f4f54b9a8431a07af0ed7.JPG" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Automation Nation</li>
+              <li><strong>Date:</strong> October 25th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/9e9af7c0f84c4494b0df2bed9f2fe163.png" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Nutrient Burn and Organization</li>
-                <li><strong>Date:</strong> October 23rd, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/9e9af7c0f84c4494b0df2bed9f2fe163.png" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Nutrient Burn and Organization</li>
+              <li><strong>Date:</strong> October 23rd, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - northern lights, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/6ce7752e4b434d2db72020fe797509f0.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Northern Lights Seedlings!</li>
-                <li><strong>Date:</strong> October 17th, 2023</li>
-                <li><strong>Tags:</strong> grow - northern lights</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/6ce7752e4b434d2db72020fe797509f0.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Northern Lights Seedlings!</li>
+              <li><strong>Date:</strong> October 17th, 2023</li>
+              <li><strong>Tags:</strong> grow - northern lights</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/240f3381af544d41933ad3d85e8da693.png" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Amnesia and White Widow Photo Dump and updates!</li>
-                <li><strong>Date:</strong> October 15th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/240f3381af544d41933ad3d85e8da693.png" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Amnesia and White Widow Photo Dump and updates!</li>
+              <li><strong>Date:</strong> October 15th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/e45c0160384e4be5ba56f9f60225da3e.JPG" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Amnesia and White Widow Update</li>
-                <li><strong>Date:</strong> September 28th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/e45c0160384e4be5ba56f9f60225da3e.JPG" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Amnesia and White Widow Update</li>
+              <li><strong>Date:</strong> September 28th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/79e7b198f8af4c7080ac14f9ed6739e8.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> White widows transferred to napkin!</li>
-                <li><strong>Date:</strong> September 25th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/79e7b198f8af4c7080ac14f9ed6739e8.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> White widows transferred to napkin!</li>
+              <li><strong>Date:</strong> September 25th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/c38daf70090e456491b390c8a00eff4c.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Good bye Liberty haze and hello white widow </li>
-                <li><strong>Date:</strong> September 25th, 2023</li>
-                <li><strong>Tags:</strong> grow - white widow, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/c38daf70090e456491b390c8a00eff4c.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Good bye Liberty haze and hello white widow </li>
+              <li><strong>Date:</strong> September 25th, 2023</li>
+              <li><strong>Tags:</strong> grow - white widow, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/237f25b51b604575996127545a83183e.JPG" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Liberty Haze and Amnesia update</li>
-                <li><strong>Date:</strong> September 19th, 2023</li>
-                <li><strong>Tags:</strong> grow - liberty haze, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/237f25b51b604575996127545a83183e.JPG" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Liberty Haze and Amnesia update</li>
+              <li><strong>Date:</strong> September 19th, 2023</li>
+              <li><strong>Tags:</strong> grow - liberty haze, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/fab4a168dd9545279e65fee1e447aff2.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Amnesia Survivor Seedling </li>
-                <li><strong>Date:</strong> September 17th, 2023</li>
-                <li><strong>Tags:</strong> grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/fab4a168dd9545279e65fee1e447aff2.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Amnesia Survivor Seedling </li>
+              <li><strong>Date:</strong> September 17th, 2023</li>
+              <li><strong>Tags:</strong> grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/277dc3c9b85248938844284147625b0c.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Liberty Haze into trays</li>
-                <li><strong>Date:</strong> September 15th, 2023</li>
-                <li><strong>Tags:</strong> grow - liberty haze</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/277dc3c9b85248938844284147625b0c.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Liberty Haze into trays</li>
+              <li><strong>Date:</strong> September 15th, 2023</li>
+              <li><strong>Tags:</strong> grow - liberty haze</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/c19e885c5cd44b339ad8702dfd113ad3.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Liberty Haze - moved seeds to paper towels </li>
-                <li><strong>Date:</strong> September 13th, 2023</li>
-                <li><strong>Tags:</strong> grow - liberty haze</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/c19e885c5cd44b339ad8702dfd113ad3.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Liberty Haze - moved seeds to paper towels </li>
+              <li><strong>Date:</strong> September 13th, 2023</li>
+              <li><strong>Tags:</strong> grow - liberty haze</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/0684395d30e74659916807911ddac296.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Amnesia disaster</li>
-                <li><strong>Date:</strong> September 12th, 2023</li>
-                <li><strong>Tags:</strong> grow - liberty haze, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/0684395d30e74659916807911ddac296.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Amnesia disaster</li>
+              <li><strong>Date:</strong> September 12th, 2023</li>
+              <li><strong>Tags:</strong> grow - liberty haze, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/9126d4fa138e478fa8711cdbe6bd2a5a.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Prepping soil for Amnesia seedlings to transplant</li>
-                <li><strong>Date:</strong> September 6th, 2023</li>
-                <li><strong>Tags:</strong> grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/9126d4fa138e478fa8711cdbe6bd2a5a.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Prepping soil for Amnesia seedlings to transplant</li>
+              <li><strong>Date:</strong> September 6th, 2023</li>
+              <li><strong>Tags:</strong> grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/6f3960d52dc0413e90f54cb029efe763.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Amnesia Seed sproutlings </li>
-                <li><strong>Date:</strong> September 4th, 2023</li>
-                <li><strong>Tags:</strong> journal - grow, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/6f3960d52dc0413e90f54cb029efe763.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Amnesia Seed sproutlings </li>
+              <li><strong>Date:</strong> September 4th, 2023</li>
+              <li><strong>Tags:</strong> journal - grow, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/446640d5256b40c5baa2ebeaeae23fb7.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Amnesia Seedlings starting to sprout</li>
-                <li><strong>Date:</strong> September 3rd, 2023</li>
-                <li><strong>Tags:</strong> journal - grow, grow - amnesia</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/446640d5256b40c5baa2ebeaeae23fb7.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Amnesia Seedlings starting to sprout</li>
+              <li><strong>Date:</strong> September 3rd, 2023</li>
+              <li><strong>Tags:</strong> journal - grow, grow - amnesia</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/aaf35d47bdac42449fd89d9478b26ecd.png" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Growing Products that I bought to start my growing journey</li>
-                <li><strong>Date:</strong> September 2nd, 2023</li>
-                <li><strong>Tags:</strong> journal - grow</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/aaf35d47bdac42449fd89d9478b26ecd.png" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Growing Products that I bought to start my growing journey</li>
+              <li><strong>Date:</strong> September 2nd, 2023</li>
+              <li><strong>Tags:</strong> journal - grow</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/522ef44df5294e06ac720dcd3ca68d01.jpg" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Maui Waui Grow Photos</li>
-                <li><strong>Date:</strong> June 26th, 2023</li>
-                <li><strong>Tags:</strong> grow - maui waui</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/522ef44df5294e06ac720dcd3ca68d01.jpg" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Maui Waui Grow Photos</li>
+              <li><strong>Date:</strong> June 26th, 2023</li>
+              <li><strong>Tags:</strong> grow - maui waui</li>
+            </ul>
           </div>
+        </div>
         
-          <div class="gallery-item" tabindex="0">
-            <img src="https://grow.thesmokinglion.com/_resources/b2e64e07d4b84412a8f9fd3f2e12f208.png" class="gallery-image" alt="">
-  
-            <div class="gallery-item-info">
-              <ul>
-                <li><strong>Title:</strong> Cannabis Growth Terminology</li>
-                <li><strong>Date:</strong> May 17th, 2023</li>
-                <li><strong>Tags:</strong> grow - tips</li>
-              </ul>
-            </div>
+        <div class="gallery-item" tabindex="0">
+          <img src="https://grow.thesmokinglion.com/_resources/b2e64e07d4b84412a8f9fd3f2e12f208.png" class="gallery-image" alt="">
+
+          <div class="gallery-item-info">
+            <ul>
+              <li><strong>Title:</strong> Cannabis Growth Terminology</li>
+              <li><strong>Date:</strong> May 17th, 2023</li>
+              <li><strong>Tags:</strong> grow - tips</li>
+            </ul>
           </div>
+        </div>
         
       </div>
       <div class="loader"></div>
     </div>
   </main>
-  
+
 </body>
 
 </html>
