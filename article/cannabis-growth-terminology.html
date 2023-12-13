@@ -11,7 +11,7 @@
   
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
   <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
   <style type="text/css">
     .custombody {
@@ -100,6 +100,24 @@
       color: #ffcd34;
     }
 
+    .btn-custom-margin {
+      margin-top: 4px;
+      /* 8px margin on the top */
+      margin-bottom: 4px;
+      /* 8px margin on the bottom */
+      /* Add horizontal margins if needed */
+      margin-left: 4px;
+      /* 8px margin on the left */
+      margin-right: 4px;
+      /* 8px margin on the right */
+    }
+
+    .row.no-gutter {
+      --bs-gutter-x: 0;
+    }
+
+
+
     .custombody .keyword.badge.badge-info,
     body .keyword.badge.badge-info {
       background-color: #fcca20 !important;
@@ -143,76 +161,85 @@
     }
 
     /* Custom Navbar Styles */
-  .navbar-custom {
-    background-color: #fcca20; /* Navbar background */
-  }
+    .navbar-custom {
+      background-color: #fcca20;
+      font-family: 'Open Sans', sans-serif;
+      /* Navbar background */
+    }
 
-  .navbar-custom .navbar-nav {
-    display: flex;
-    justify-content: left; /* left the menu items */
-    width: 100%; /* Ensure full width */
-    height: 100%; /* Match the height of navbar if necessary */
-  }
-
-  .navbar-custom .navbar-nav .nav-link {
-    color: #211d1d; /* Nav item color */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    padding-top: 0.5rem; /* Adjust top padding */
-    padding-bottom: 0.5rem; /* Adjust bottom padding */
-    height: 100%; /* Full height for background color fill */
-  }
-
-  .navbar-custom .navbar-nav .nav-link:hover,
-  .navbar-custom .navbar-nav .nav-link.active {
-    background-color: #83171c; /* Nav item hover and active background */
-    color: #fff;
-  }
-
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-
-  /* Core navbar-brand style */
-  .navbar-brand {
-    color: #000000 !important; /* Site name color */
-  }
-
-  /* Conditional styling for navigation image */
-  
+    /* Core navbar-brand style */
     .navbar-brand {
-      background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
-      background-size: 30px 50px;
-      padding-left: 45px; /* Adjust padding */
+      color: #000000 !important;
+      /* Site name color */
+      /* Additional non-conditional styles here if necessary */
     }
-  
 
-  /* For mobile screens, ensure the collapsed navbar content is also centered */
-  @media (max-width: 991px) {
-    .navbar-custom .navbar-collapse {
-      justify-content: center;
-    }
-    .navbar-custom .navbar-nav .nav-item {
-      width: 100%; /* Full width for each item in the collapsed menu */
-    }
+    /* Conditional styling for navigation image */
+    .navbar-brand {
+        background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
+        background-size: 30px 50px;
+        padding-left: 45px;
+        /* Adjust padding */
+      }
+
+      
+
+    /* Navbar link styles */
     .navbar-custom .navbar-nav .nav-link {
-      width: 100%; /* Full width for each link in the collapsed menu */
-      padding-left: 1rem; /* Adjust padding to match your design */
-      padding-right: 1rem; /* Adjust padding to match your design */
+      color: #211d1d;
+      /* Nav item color */
+      padding-top: 0.5rem;
+      /* Adjust top padding */
+      padding-bottom: 0.5rem;
+      /* Adjust bottom padding */
     }
-  }
 
-  /* For desktop screens, no need to right-align, as we're centering everything */
-  @media (min-width: 992px) {
-    .navbar-custom .navbar-collapse {
-      justify-content: center; /* Center the entire navbar content */
+    .navbar-custom .navbar-nav .nav-link:hover,
+    .navbar-custom .navbar-nav .nav-link.active {
+      background-color: #83171c;
+      /* Nav item hover and active background */
+      color: #fff;
     }
-    .navbar-custom .navbar-nav .nav-item {
-      /* Optionally adjust space between items as needed */
-      margin-left: .5rem;
-      margin-right: .5rem;
+
+    /* Navbar toggler icon style */
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
-  }
+
+    /* For mobile screens, center the collapsed navbar content */
+    @media (max-width: 991px) {
+      .navbar-custom .navbar-nav {
+        flex-direction: column;
+        /* Stack nav items vertically */
+        width: 100%;
+        /* Full width of nav items */
+      }
+
+      .navbar-custom .navbar-nav .nav-item,
+      .navbar-custom .navbar-nav .nav-link {
+        width: 100%;
+        /* Full width for each item */
+        text-align: center;
+        /* Center text for each item */
+      }
+    }
+
+    /* For desktop screens, align the menu items to the left next to the brand */
+    @media (min-width: 992px) {
+      .navbar-custom .navbar-nav {
+        flex-direction: row;
+        /* Align nav items in a row */
+        justify-content: flex-start;
+        /* Align nav items to the start (left) */
+      }
+
+      .navbar-custom .navbar-nav .nav-item {
+        margin-right: .5rem;
+        /* Space between nav items */
+      }
+
+      /* Remove specific width settings on desktop for .nav-item and .nav-link */
+    }
   </style>
 
   <title>
@@ -232,11 +259,11 @@
 <!-- Bootstrap Navbar with Custom Class -->
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
-    <a class="navbar-brand" href="https://grow.thesmokinglion.com">The Smoking Lion Bud Blog</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/">The Smoking Lion Bud Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>    
-    <div class="collapse navbar-collapse" id="navbarNav">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav">
         
         <li class="nav-item">
@@ -325,9 +352,7 @@
 
 
   <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const articleContent = document.querySelector('.article-content');

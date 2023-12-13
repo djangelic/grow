@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +11,7 @@
   
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
   <style type="text/css">
     .custombody {
       color: #FFFFFF !important;
@@ -98,6 +99,24 @@
       color: #ffcd34;
     }
 
+    .btn-custom-margin {
+      margin-top: 4px;
+      /* 8px margin on the top */
+      margin-bottom: 4px;
+      /* 8px margin on the bottom */
+      /* Add horizontal margins if needed */
+      margin-left: 4px;
+      /* 8px margin on the left */
+      margin-right: 4px;
+      /* 8px margin on the right */
+    }
+
+    .row.no-gutter {
+      --bs-gutter-x: 0;
+    }
+
+
+
     .custombody .keyword.badge.badge-info,
     body .keyword.badge.badge-info {
       background-color: #fcca20 !important;
@@ -141,87 +160,96 @@
     }
 
     /* Custom Navbar Styles */
-  .navbar-custom {
-    background-color: #fcca20; /* Navbar background */
-  }
+    .navbar-custom {
+      background-color: #fcca20;
+      font-family: 'Open Sans', sans-serif;
+      /* Navbar background */
+    }
 
-  .navbar-custom .navbar-nav {
-    display: flex;
-    justify-content: left; /* left the menu items */
-    width: 100%; /* Ensure full width */
-    height: 100%; /* Match the height of navbar if necessary */
-  }
-
-  .navbar-custom .navbar-nav .nav-link {
-    color: #211d1d; /* Nav item color */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    padding-top: 0.5rem; /* Adjust top padding */
-    padding-bottom: 0.5rem; /* Adjust bottom padding */
-    height: 100%; /* Full height for background color fill */
-  }
-
-  .navbar-custom .navbar-nav .nav-link:hover,
-  .navbar-custom .navbar-nav .nav-link.active {
-    background-color: #83171c; /* Nav item hover and active background */
-    color: #fff;
-  }
-
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-
-  /* Core navbar-brand style */
-  .navbar-brand {
-    color: #000000 !important; /* Site name color */
-  }
-
-  /* Conditional styling for navigation image */
-  
+    /* Core navbar-brand style */
     .navbar-brand {
-      background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
-      background-size: 30px 50px;
-      padding-left: 45px; /* Adjust padding */
+      color: #000000 !important;
+      /* Site name color */
+      /* Additional non-conditional styles here if necessary */
     }
-  
 
-  /* For mobile screens, ensure the collapsed navbar content is also centered */
-  @media (max-width: 991px) {
-    .navbar-custom .navbar-collapse {
-      justify-content: center;
-    }
-    .navbar-custom .navbar-nav .nav-item {
-      width: 100%; /* Full width for each item in the collapsed menu */
-    }
+    /* Conditional styling for navigation image */
+    .navbar-brand {
+        background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
+        background-size: 30px 50px;
+        padding-left: 45px;
+        /* Adjust padding */
+      }
+
+      
+
+    /* Navbar link styles */
     .navbar-custom .navbar-nav .nav-link {
-      width: 100%; /* Full width for each link in the collapsed menu */
-      padding-left: 1rem; /* Adjust padding to match your design */
-      padding-right: 1rem; /* Adjust padding to match your design */
+      color: #211d1d;
+      /* Nav item color */
+      padding-top: 0.5rem;
+      /* Adjust top padding */
+      padding-bottom: 0.5rem;
+      /* Adjust bottom padding */
     }
-  }
 
-  /* For desktop screens, no need to right-align, as we're centering everything */
-  @media (min-width: 992px) {
-    .navbar-custom .navbar-collapse {
-      justify-content: center; /* Center the entire navbar content */
+    .navbar-custom .navbar-nav .nav-link:hover,
+    .navbar-custom .navbar-nav .nav-link.active {
+      background-color: #83171c;
+      /* Nav item hover and active background */
+      color: #fff;
     }
-    .navbar-custom .navbar-nav .nav-item {
-      /* Optionally adjust space between items as needed */
-      margin-left: .5rem;
-      margin-right: .5rem;
+
+    /* Navbar toggler icon style */
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
     }
-  }
+
+    /* For mobile screens, center the collapsed navbar content */
+    @media (max-width: 991px) {
+      .navbar-custom .navbar-nav {
+        flex-direction: column;
+        /* Stack nav items vertically */
+        width: 100%;
+        /* Full width of nav items */
+      }
+
+      .navbar-custom .navbar-nav .nav-item,
+      .navbar-custom .navbar-nav .nav-link {
+        width: 100%;
+        /* Full width for each item */
+        text-align: center;
+        /* Center text for each item */
+      }
+    }
+
+    /* For desktop screens, align the menu items to the left next to the brand */
+    @media (min-width: 992px) {
+      .navbar-custom .navbar-nav {
+        flex-direction: row;
+        /* Align nav items in a row */
+        justify-content: flex-start;
+        /* Align nav items to the start (left) */
+      }
+
+      .navbar-custom .navbar-nav .nav-item {
+        margin-right: .5rem;
+        /* Space between nav items */
+      }
+
+      /* Remove specific width settings on desktop for .nav-item and .nav-link */
+    }
   </style>
   <title>Tags - The Smoking Lion Bud Blog</title>
 </head>
 <!-- Bootstrap Navbar with Custom Class -->
 <nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
-    <a class="navbar-brand" href="https://grow.thesmokinglion.com">The Smoking Lion Bud Blog</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/">The Smoking Lion Bud Blog</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>    
-    <div class="collapse navbar-collapse" id="navbarNav">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav">
         
         <li class="nav-item">
@@ -252,6 +280,7 @@
     </div>
   </div>
 </nav>
+
 <body>
   <div class="container mt-4">
     <!-- Tagged Articles List -->
@@ -266,7 +295,7 @@
           <li class="mb-2">
             <time datetime="1702236702255" class="mr-2 text-muted">
               12-10-2023
-            </time>            
+            </time>
             <a href="/article/vacation-disaster-and-harvesting-of-haze">
               Vacation Disaster and harvesting of Haze
             </a>
@@ -275,7 +304,7 @@
           <li class="mb-2">
             <time datetime="1700884120520" class="mr-2 text-muted">
               11-24-2023
-            </time>            
+            </time>
             <a href="/article/almost-harvest-time-for-haze">
               Almost Harvest time for Haze
             </a>
@@ -284,7 +313,7 @@
           <li class="mb-2">
             <time datetime="1700636400000" class="mr-2 text-muted">
               11-22-2023
-            </time>            
+            </time>
             <a href="/article/growing-like-weeds">
               Growing like weeds
             </a>
@@ -293,7 +322,7 @@
           <li class="mb-2">
             <time datetime="1700462231601" class="mr-2 text-muted">
               11-19-2023
-            </time>            
+            </time>
             <a href="/article/haircut-for-the-ladies">
               Haircut for the ladies
             </a>
@@ -302,7 +331,7 @@
           <li class="mb-2">
             <time datetime="1699719151747" class="mr-2 text-muted">
               11-11-2023
-            </time>            
+            </time>
             <a href="/article/new-seeds-have-arrived">
               New Seeds have arrived!
             </a>
@@ -311,7 +340,7 @@
           <li class="mb-2">
             <time datetime="1699115814875" class="mr-2 text-muted">
               11-04-2023
-            </time>            
+            </time>
             <a href="/article/automated-water-tank-refill">
               Automated Water tank refill
             </a>
@@ -320,7 +349,7 @@
           <li class="mb-2">
             <time datetime="1698252270589" class="mr-2 text-muted">
               10-25-2023
-            </time>            
+            </time>
             <a href="/article/automation-nation">
               Automation Nation
             </a>
@@ -329,7 +358,7 @@
           <li class="mb-2">
             <time datetime="1698126463551" class="mr-2 text-muted">
               10-23-2023
-            </time>            
+            </time>
             <a href="/article/nutrient-burn-and-organization">
               Nutrient Burn and Organization
             </a>
@@ -338,7 +367,7 @@
           <li class="mb-2">
             <time datetime="1697402014431" class="mr-2 text-muted">
               10-15-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!">
               Amnesia and White Widow Photo Dump and updates!
             </a>
@@ -347,7 +376,7 @@
           <li class="mb-2">
             <time datetime="1695923156273" class="mr-2 text-muted">
               09-28-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-and-white-widow-update">
               Amnesia and White Widow Update
             </a>
@@ -356,7 +385,7 @@
           <li class="mb-2">
             <time datetime="1695707814718" class="mr-2 text-muted">
               09-25-2023
-            </time>            
+            </time>
             <a href="/article/white-widows-transferred-to-napkin!">
               White widows transferred to napkin!
             </a>
@@ -365,7 +394,7 @@
           <li class="mb-2">
             <time datetime="1695657246309" class="mr-2 text-muted">
               09-25-2023
-            </time>            
+            </time>
             <a href="/article/good-bye-liberty-haze-and-hello-white-widow">
               Good bye Liberty haze and hello white widow 
             </a>
@@ -381,7 +410,7 @@
           <li class="mb-2">
             <time datetime="1702236702255" class="mr-2 text-muted">
               12-10-2023
-            </time>            
+            </time>
             <a href="/article/vacation-disaster-and-harvesting-of-haze">
               Vacation Disaster and harvesting of Haze
             </a>
@@ -397,7 +426,7 @@
           <li class="mb-2">
             <time datetime="1702236702255" class="mr-2 text-muted">
               12-10-2023
-            </time>            
+            </time>
             <a href="/article/vacation-disaster-and-harvesting-of-haze">
               Vacation Disaster and harvesting of Haze
             </a>
@@ -406,7 +435,7 @@
           <li class="mb-2">
             <time datetime="1700884120520" class="mr-2 text-muted">
               11-24-2023
-            </time>            
+            </time>
             <a href="/article/almost-harvest-time-for-haze">
               Almost Harvest time for Haze
             </a>
@@ -415,7 +444,7 @@
           <li class="mb-2">
             <time datetime="1700636400000" class="mr-2 text-muted">
               11-22-2023
-            </time>            
+            </time>
             <a href="/article/growing-like-weeds">
               Growing like weeds
             </a>
@@ -424,7 +453,7 @@
           <li class="mb-2">
             <time datetime="1700462231601" class="mr-2 text-muted">
               11-19-2023
-            </time>            
+            </time>
             <a href="/article/haircut-for-the-ladies">
               Haircut for the ladies
             </a>
@@ -433,7 +462,7 @@
           <li class="mb-2">
             <time datetime="1699719151747" class="mr-2 text-muted">
               11-11-2023
-            </time>            
+            </time>
             <a href="/article/new-seeds-have-arrived">
               New Seeds have arrived!
             </a>
@@ -442,7 +471,7 @@
           <li class="mb-2">
             <time datetime="1699115814875" class="mr-2 text-muted">
               11-04-2023
-            </time>            
+            </time>
             <a href="/article/automated-water-tank-refill">
               Automated Water tank refill
             </a>
@@ -451,7 +480,7 @@
           <li class="mb-2">
             <time datetime="1698252270589" class="mr-2 text-muted">
               10-25-2023
-            </time>            
+            </time>
             <a href="/article/automation-nation">
               Automation Nation
             </a>
@@ -460,7 +489,7 @@
           <li class="mb-2">
             <time datetime="1698126463551" class="mr-2 text-muted">
               10-23-2023
-            </time>            
+            </time>
             <a href="/article/nutrient-burn-and-organization">
               Nutrient Burn and Organization
             </a>
@@ -469,7 +498,7 @@
           <li class="mb-2">
             <time datetime="1697526000000" class="mr-2 text-muted">
               10-17-2023
-            </time>            
+            </time>
             <a href="/article/northern-lights-seedlings!">
               Northern Lights Seedlings!
             </a>
@@ -485,7 +514,7 @@
           <li class="mb-2">
             <time datetime="1702236702255" class="mr-2 text-muted">
               12-10-2023
-            </time>            
+            </time>
             <a href="/article/vacation-disaster-and-harvesting-of-haze">
               Vacation Disaster and harvesting of Haze
             </a>
@@ -494,7 +523,7 @@
           <li class="mb-2">
             <time datetime="1700884120520" class="mr-2 text-muted">
               11-24-2023
-            </time>            
+            </time>
             <a href="/article/almost-harvest-time-for-haze">
               Almost Harvest time for Haze
             </a>
@@ -503,7 +532,7 @@
           <li class="mb-2">
             <time datetime="1700636400000" class="mr-2 text-muted">
               11-22-2023
-            </time>            
+            </time>
             <a href="/article/growing-like-weeds">
               Growing like weeds
             </a>
@@ -512,7 +541,7 @@
           <li class="mb-2">
             <time datetime="1700462231601" class="mr-2 text-muted">
               11-19-2023
-            </time>            
+            </time>
             <a href="/article/haircut-for-the-ladies">
               Haircut for the ladies
             </a>
@@ -521,7 +550,7 @@
           <li class="mb-2">
             <time datetime="1699719151747" class="mr-2 text-muted">
               11-11-2023
-            </time>            
+            </time>
             <a href="/article/new-seeds-have-arrived">
               New Seeds have arrived!
             </a>
@@ -530,7 +559,7 @@
           <li class="mb-2">
             <time datetime="1699115814875" class="mr-2 text-muted">
               11-04-2023
-            </time>            
+            </time>
             <a href="/article/automated-water-tank-refill">
               Automated Water tank refill
             </a>
@@ -539,7 +568,7 @@
           <li class="mb-2">
             <time datetime="1698252270589" class="mr-2 text-muted">
               10-25-2023
-            </time>            
+            </time>
             <a href="/article/automation-nation">
               Automation Nation
             </a>
@@ -548,7 +577,7 @@
           <li class="mb-2">
             <time datetime="1698126463551" class="mr-2 text-muted">
               10-23-2023
-            </time>            
+            </time>
             <a href="/article/nutrient-burn-and-organization">
               Nutrient Burn and Organization
             </a>
@@ -557,7 +586,7 @@
           <li class="mb-2">
             <time datetime="1697402014431" class="mr-2 text-muted">
               10-15-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!">
               Amnesia and White Widow Photo Dump and updates!
             </a>
@@ -566,7 +595,7 @@
           <li class="mb-2">
             <time datetime="1695923156273" class="mr-2 text-muted">
               09-28-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-and-white-widow-update">
               Amnesia and White Widow Update
             </a>
@@ -575,7 +604,7 @@
           <li class="mb-2">
             <time datetime="1695657246309" class="mr-2 text-muted">
               09-25-2023
-            </time>            
+            </time>
             <a href="/article/good-bye-liberty-haze-and-hello-white-widow">
               Good bye Liberty haze and hello white widow 
             </a>
@@ -584,7 +613,7 @@
           <li class="mb-2">
             <time datetime="1695142066256" class="mr-2 text-muted">
               09-19-2023
-            </time>            
+            </time>
             <a href="/article/liberty-haze-and-amnesia-update">
               Liberty Haze and Amnesia update
             </a>
@@ -593,7 +622,7 @@
           <li class="mb-2">
             <time datetime="1694968206943" class="mr-2 text-muted">
               09-17-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-survivor-seedling">
               Amnesia Survivor Seedling 
             </a>
@@ -602,7 +631,7 @@
           <li class="mb-2">
             <time datetime="1694544969911" class="mr-2 text-muted">
               09-12-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-disaster">
               Amnesia disaster
             </a>
@@ -611,7 +640,7 @@
           <li class="mb-2">
             <time datetime="1694015127397" class="mr-2 text-muted">
               09-06-2023
-            </time>            
+            </time>
             <a href="/article/prepping-soil-for-amnesia-seedlings-to-transplant">
               Prepping soil for Amnesia seedlings to transplant
             </a>
@@ -620,7 +649,7 @@
           <li class="mb-2">
             <time datetime="1693889571524" class="mr-2 text-muted">
               09-04-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-seed-sproutlings">
               Amnesia Seed sproutlings 
             </a>
@@ -629,7 +658,7 @@
           <li class="mb-2">
             <time datetime="1693798509892" class="mr-2 text-muted">
               09-03-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-seedlings-starting-to-sprout">
               Amnesia Seedlings starting to sprout
             </a>
@@ -645,7 +674,7 @@
           <li class="mb-2">
             <time datetime="1695142066256" class="mr-2 text-muted">
               09-19-2023
-            </time>            
+            </time>
             <a href="/article/liberty-haze-and-amnesia-update">
               Liberty Haze and Amnesia update
             </a>
@@ -654,7 +683,7 @@
           <li class="mb-2">
             <time datetime="1694801442386" class="mr-2 text-muted">
               09-15-2023
-            </time>            
+            </time>
             <a href="/article/liberty-haze-into-trays">
               Liberty Haze into trays
             </a>
@@ -663,7 +692,7 @@
           <li class="mb-2">
             <time datetime="1694658737748" class="mr-2 text-muted">
               09-13-2023
-            </time>            
+            </time>
             <a href="/article/liberty-haze-moved-seeds-to-paper-towels">
               Liberty Haze - moved seeds to paper towels 
             </a>
@@ -672,7 +701,7 @@
           <li class="mb-2">
             <time datetime="1694544969911" class="mr-2 text-muted">
               09-12-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-disaster">
               Amnesia disaster
             </a>
@@ -688,7 +717,7 @@
           <li class="mb-2">
             <time datetime="1693889571524" class="mr-2 text-muted">
               09-04-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-seed-sproutlings">
               Amnesia Seed sproutlings 
             </a>
@@ -697,7 +726,7 @@
           <li class="mb-2">
             <time datetime="1693798509892" class="mr-2 text-muted">
               09-03-2023
-            </time>            
+            </time>
             <a href="/article/amnesia-seedlings-starting-to-sprout">
               Amnesia Seedlings starting to sprout
             </a>
@@ -706,7 +735,7 @@
           <li class="mb-2">
             <time datetime="1693701024728" class="mr-2 text-muted">
               09-02-2023
-            </time>            
+            </time>
             <a href="/article/growing-products-that-i-bought-to-start-my-growing-journey">
               Growing Products that I bought to start my growing journey
             </a>
@@ -722,7 +751,7 @@
           <li class="mb-2">
             <time datetime="1687762800000" class="mr-2 text-muted">
               06-26-2023
-            </time>            
+            </time>
             <a href="/article/maui-waui-grow-photos">
               Maui Waui Grow Photos
             </a>
@@ -738,7 +767,7 @@
           <li class="mb-2">
             <time datetime="1684306800000" class="mr-2 text-muted">
               05-17-2023
-            </time>            
+            </time>
             <a href="/article/cannabis-growth-terminology">
               Cannabis Growth Terminology
             </a>
@@ -751,8 +780,7 @@
   </div>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
