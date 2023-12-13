@@ -160,20 +160,30 @@
       color: #fff;
     }
 
+    /* Core navbar-brand style */
     .navbar-brand {
       color: #000000 !important;
       /* Site name color */
+      /* Add other non-conditional styles here if necessary */
     }
 
-    /* If there's a navigation image URL, additional styling might be needed */
+    /* Conditional styling for navigation image */
     .navbar-brand {
         background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
         background-size: 24px 30px;
         padding-left: 39px;
-        /* Adjust padding based on image width */
+        /* Adjust padding */
       }
 
       
+
+    /* Media query for center alignment on desktop */
+    @media (min-width: 992px) {
+      .navbar-custom .navbar-collapse {
+        justify-content: center;
+        /* Center-align flex items */
+      }
+    }
   </style>
 
   <title>
