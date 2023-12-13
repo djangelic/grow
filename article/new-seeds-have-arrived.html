@@ -164,7 +164,7 @@
     .navbar-brand {
       color: #000000 !important;
       /* Site name color */
-      /* Add other non-conditional styles here if necessary */
+      /* Other non-conditional styles here */
     }
 
     /* Conditional styling for navigation image */
@@ -177,11 +177,24 @@
 
       
 
-    /* Media query for center alignment on desktop */
+    /* Right align the menu items */
+    .navbar-custom .navbar-collapse {
+      margin-left: auto;
+      /* Pushes the menu items to the right */
+    }
+
+    /* For desktop screens */
     @media (min-width: 992px) {
-      .navbar-custom .navbar-collapse {
-        justify-content: center;
-        /* Center-align flex items */
+      .navbar-custom .navbar-nav {
+        justify-content: flex-end;
+        /* Aligns nav items to the right */
+      }
+
+      .navbar-custom .navbar-nav .nav-item {
+        margin-left: .5rem;
+        /* Adjust space between items as needed */
+        margin-right: .5rem;
+        /* Adjust space between items as needed */
       }
     }
   </style>
