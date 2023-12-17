@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang='en' class=''>
+
 <head>
+
+  <meta charset='UTF-8'>
+  <title>Profile</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg">
+  <link rel="mask-icon" href="https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg" color="#111">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   <!-- ... other head tags ... -->
 
   <!-- External CSS -->
@@ -13,387 +28,762 @@
 
   <!--Style-->
   <style>
-.gallery-image {
-    width: 100%; /* Adjust as necessary */
-    height: 285px; /* Set a fixed height */
-    object-fit: cover; /* This will ensure images cover the area nicely */
-}
+    .gallery-image {
+      width: 100%;
+      /* Adjust as necessary */
+      height: 285px;
+      /* Set a fixed height */
+      object-fit: cover;
+      /* This will ensure images cover the area nicely, but it makes the images look grainy. Cover makes them auto fit, and contain makes them look nicer. set this as a user parameter in the page settings. */
+    }
 
+    body {
+      font-family: "Open Sans", Arial, sans-serif;
+      min-height: 100vh;
+      background-color: #292c30 !important;
+      background-image: none !important;
+      color: #FFFFFF;
+      padding-bottom: 3rem;
+    }
+
+    body a {
+      color: #ffcd34 !important;
+    }
+
+    .profile-user-settings {
+      text-align: center;
+    }
+
+
+    @media only screen and (max-width: 1300px) {
+
+      .profile-image,
+      .profile-user-settings,
+      .profile-stats,
+      .profile-bio {
+        width: 100%;
+        text-align: center;
+      }
+
+      .profile {
+        display: block;
+      }
+
+      .profile-image {
+        margin: 0 auto;
+        /* Center the image */
+      }
+
+      .profile-user-settings,
+      .profile-stats,
+      .profile-bio {
+        margin-top: 20px;
+        /* Adds some space between the elements */
+      }
+
+      .profile-image img {
+        width: 100%;
+        /* Make the image take the full width of its container */
+        height: auto;
+        /* Set height to auto to maintain the aspect ratio */
+        object-fit: contain;
+        /* This makes sure the entire image is always visible, and maintained aspect ratio */
+        display: block;
+        /* Ensure the image is a block-level element */
+        margin: 0 auto;
+        /* Center the image */
+      }
+    }
   </style>
 
 </head>
 
 <!-- Bootstrap Navbar with Custom Class -->
 <!-- Bootstrap Navbar with Custom Class -->
-<header>
 
-	<div class="container">
+<body>
+  <header>
 
-		<div class="profile">
+    <div class="container">
 
-			<div class="profile-image">
+      <div class="profile">
 
-				<img src="https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg" alt="" width="200" height="200">
+        <div class="profile-image">
 
-			</div>
+          <img src="https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg" alt="" width="200" height="200">
 
-			<div class="profile-user-settings">
+        </div>
 
-				<h1 class="profile-user-name">The Smoking Lion Grow Blog</h1>
+        <div class="profile-user-settings">
 
-				<button class="btn profile-edit-btn">Edit Profile</button>
+          <h1 class="profile-user-name">The Smoking Lion Grow Blog</h1>
 
-				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+        </div>
 
-			</div>
+        <div class="profile-stats">
 
-			<div class="profile-stats">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="archives">
+                Journal
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="links">
+                Links
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="tags">
+                Tags
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="about">
+                About
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="gallery">
+                Gallery
+              </a>
+            </li>
+            
+          </ul>
 
-				<ul>
-					<li><span class="profile-stat-count">164</span> posts</li>
-					<li><span class="profile-stat-count">188</span> followers</li>
-					<li><span class="profile-stat-count">206</span> following</li>
-				</ul>
+        </div>
 
-			</div>
+        <div class="profile-bio">
 
-			<div class="profile-bio">
+          <p><p>This is our Bud Blog, which encapsulates our cannabis cultivation voyage, sharing the ups, downs, and insights gained as we delve into the green world, aiming to connect with like-minded individuals and contribute to the growing community.</p>
+<p>Please note that this website is currently under a constant state of maintenance. I will remove this when the site is more stable. Thanks!</p>
+</p>
 
-				<p><span class="profile-real-name">Jane Doe</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit 📷✈️🏕️</p>
+        </div>
 
-			</div>
-
-		</div>
-		<!-- End of profile section -->
-
-	</div>
-	<!-- End of container -->
-
-</header>
-
-
-<main>
-  <div class="container">
-      <div class="gallery">
-          
-          <a href="/article/vacation-disaster-and-harvesting-of-haze" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/eaf43d6792c04082af35c0dea3cb84d7.JPG" class="gallery-image" alt="Vacation Disaster and harvesting of Haze">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/almost-harvest-time-for-haze" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" class="gallery-image" alt="Almost Harvest time for Haze">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/growing-like-weeds" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/e721ff65e18a476aa2bb3b633ca1180a.JPG" class="gallery-image" alt="Growing like weeds">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/haircut-for-the-ladies" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/9f81aa28f2a54ab7a38d6f25b8a1b8cc.png" class="gallery-image" alt="Haircut for the ladies">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/new-seeds-have-arrived" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/b092b227f6bd4a62942d528ec31b6fd7.jpg" class="gallery-image" alt="New Seeds have arrived!">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/automated-water-tank-refill" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/71b0e9c7552049b1bb9d493e7a680fce.jpg" class="gallery-image" alt="Automated Water tank refill">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/automation-nation" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/4ee43cbe335f4f54b9a8431a07af0ed7.JPG" class="gallery-image" alt="Automation Nation">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/nutrient-burn-and-organization" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/9e9af7c0f84c4494b0df2bed9f2fe163.png" class="gallery-image" alt="Nutrient Burn and Organization">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/northern-lights-seedlings!" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/6ce7752e4b434d2db72020fe797509f0.jpg" class="gallery-image" alt="Northern Lights Seedlings!">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/240f3381af544d41933ad3d85e8da693.png" class="gallery-image" alt="Amnesia and White Widow Photo Dump and updates!">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/amnesia-and-white-widow-update" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/e45c0160384e4be5ba56f9f60225da3e.JPG" class="gallery-image" alt="Amnesia and White Widow Update">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/white-widows-transferred-to-napkin!" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/79e7b198f8af4c7080ac14f9ed6739e8.jpg" class="gallery-image" alt="White widows transferred to napkin!">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/good-bye-liberty-haze-and-hello-white-widow" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/c38daf70090e456491b390c8a00eff4c.jpg" class="gallery-image" alt="Good bye Liberty haze and hello white widow ">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/liberty-haze-and-amnesia-update" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/237f25b51b604575996127545a83183e.JPG" class="gallery-image" alt="Liberty Haze and Amnesia update">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/amnesia-survivor-seedling" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/fab4a168dd9545279e65fee1e447aff2.jpg" class="gallery-image" alt="Amnesia Survivor Seedling ">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/liberty-haze-into-trays" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/277dc3c9b85248938844284147625b0c.jpg" class="gallery-image" alt="Liberty Haze into trays">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/liberty-haze-moved-seeds-to-paper-towels" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/c19e885c5cd44b339ad8702dfd113ad3.jpg" class="gallery-image" alt="Liberty Haze - moved seeds to paper towels ">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/amnesia-disaster" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/0684395d30e74659916807911ddac296.jpg" class="gallery-image" alt="Amnesia disaster">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/prepping-soil-for-amnesia-seedlings-to-transplant" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/9126d4fa138e478fa8711cdbe6bd2a5a.jpg" class="gallery-image" alt="Prepping soil for Amnesia seedlings to transplant">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/amnesia-seed-sproutlings" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/6f3960d52dc0413e90f54cb029efe763.jpg" class="gallery-image" alt="Amnesia Seed sproutlings ">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/amnesia-seedlings-starting-to-sprout" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/446640d5256b40c5baa2ebeaeae23fb7.jpg" class="gallery-image" alt="Amnesia Seedlings starting to sprout">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/growing-products-that-i-bought-to-start-my-growing-journey" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/aaf35d47bdac42449fd89d9478b26ecd.png" class="gallery-image" alt="Growing Products that I bought to start my growing journey">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/maui-waui-grow-photos" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/522ef44df5294e06ac720dcd3ca68d01.jpg" class="gallery-image" alt="Maui Waui Grow Photos">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
-          <a href="/article/cannabis-growth-terminology" class="gallery-link" tabindex="0">
-            <div class="gallery-item">
-                <img src="https://grow.thesmokinglion.com/_resources/b2e64e07d4b84412a8f9fd3f2e12f208.png" class="gallery-image" alt="Cannabis Growth Terminology">
-
-                <div class="gallery-item-info">
-                    <ul>
-                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
-                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
-                    </ul>
-                </div>
-            </div>
-          </a>
-          
       </div>
-  </div>
-</main>
+      <!-- End of profile section -->
+
+    </div>
+    <!-- End of container -->
+
+  </header>
 
 
+  <main>
+    <div class="container">
+      <div class="gallery">
+        
+        <a href="/article/vacation-disaster-and-harvesting-of-haze" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/eaf43d6792c04082af35c0dea3cb84d7.JPG" class="gallery-image" alt="Vacation Disaster and harvesting of Haze">
 
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/almost-harvest-time-for-haze" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" class="gallery-image" alt="Almost Harvest time for Haze">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/growing-like-weeds" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/e721ff65e18a476aa2bb3b633ca1180a.JPG" class="gallery-image" alt="Growing like weeds">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/haircut-for-the-ladies" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/9f81aa28f2a54ab7a38d6f25b8a1b8cc.png" class="gallery-image" alt="Haircut for the ladies">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/new-seeds-have-arrived" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/b092b227f6bd4a62942d528ec31b6fd7.jpg" class="gallery-image" alt="New Seeds have arrived!">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/automated-water-tank-refill" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/71b0e9c7552049b1bb9d493e7a680fce.jpg" class="gallery-image" alt="Automated Water tank refill">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/automation-nation" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/4ee43cbe335f4f54b9a8431a07af0ed7.JPG" class="gallery-image" alt="Automation Nation">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/nutrient-burn-and-organization" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/9e9af7c0f84c4494b0df2bed9f2fe163.png" class="gallery-image" alt="Nutrient Burn and Organization">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/northern-lights-seedlings!" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/6ce7752e4b434d2db72020fe797509f0.jpg" class="gallery-image" alt="Northern Lights Seedlings!">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/240f3381af544d41933ad3d85e8da693.png" class="gallery-image" alt="Amnesia and White Widow Photo Dump and updates!">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/amnesia-and-white-widow-update" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/e45c0160384e4be5ba56f9f60225da3e.JPG" class="gallery-image" alt="Amnesia and White Widow Update">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/white-widows-transferred-to-napkin!" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/79e7b198f8af4c7080ac14f9ed6739e8.jpg" class="gallery-image" alt="White widows transferred to napkin!">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/good-bye-liberty-haze-and-hello-white-widow" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/c38daf70090e456491b390c8a00eff4c.jpg" class="gallery-image" alt="Good bye Liberty haze and hello white widow ">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/liberty-haze-and-amnesia-update" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/237f25b51b604575996127545a83183e.JPG" class="gallery-image" alt="Liberty Haze and Amnesia update">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/amnesia-survivor-seedling" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/fab4a168dd9545279e65fee1e447aff2.jpg" class="gallery-image" alt="Amnesia Survivor Seedling ">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/liberty-haze-into-trays" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/277dc3c9b85248938844284147625b0c.jpg" class="gallery-image" alt="Liberty Haze into trays">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/liberty-haze-moved-seeds-to-paper-towels" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/c19e885c5cd44b339ad8702dfd113ad3.jpg" class="gallery-image" alt="Liberty Haze - moved seeds to paper towels ">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/amnesia-disaster" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/0684395d30e74659916807911ddac296.jpg" class="gallery-image" alt="Amnesia disaster">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/prepping-soil-for-amnesia-seedlings-to-transplant" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/9126d4fa138e478fa8711cdbe6bd2a5a.jpg" class="gallery-image" alt="Prepping soil for Amnesia seedlings to transplant">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/amnesia-seed-sproutlings" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/6f3960d52dc0413e90f54cb029efe763.jpg" class="gallery-image" alt="Amnesia Seed sproutlings ">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/amnesia-seedlings-starting-to-sprout" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/446640d5256b40c5baa2ebeaeae23fb7.jpg" class="gallery-image" alt="Amnesia Seedlings starting to sprout">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/growing-products-that-i-bought-to-start-my-growing-journey" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/aaf35d47bdac42449fd89d9478b26ecd.png" class="gallery-image" alt="Growing Products that I bought to start my growing journey">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/maui-waui-grow-photos" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/522ef44df5294e06ac720dcd3ca68d01.jpg" class="gallery-image" alt="Maui Waui Grow Photos">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              
+              <span class="visually-hidden">Photo Gallery</span><i class="fas fa-images" aria-hidden="true"></i>
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+        <a href="/article/cannabis-growth-terminology" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/b2e64e07d4b84412a8f9fd3f2e12f208.png" class="gallery-image" alt="Cannabis Growth Terminology">
+
+            <div class="gallery-item-type">
+              
+              <span class="visually-hidden">Text</span><i class="fas fa-align-left" aria-hidden="true"></i>
+              
+              
+              
+              <span class="visually-hidden">Photo</span><i class="fas fa-camera" aria-hidden="true"></i>
+              
+              
+            </div>
+
+
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 0</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+            </div>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </main>
+
+</body>
 
 
 
