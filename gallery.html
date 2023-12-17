@@ -55,9 +55,43 @@
     }
 
     .profile-bio {
-        text-align: center;
-        /* Center the text */
-      }
+      text-align: center;
+      /* Center the text */
+    }
+
+    .social-media-icons {
+      display: flex;
+      /* Use Flexbox to center the list */
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      /* Center vertically (if needed) */
+      margin-top: 1rem;
+      /* Spacing from the top, equivalent to mt-4 */
+    }
+
+    .icon-list {
+      list-style-type: none;
+      /* Remove default list styling */
+      padding: 0;
+      /* Remove default padding */
+      margin: 0;
+      /* Remove default margin */
+      display: flex;
+      /* Use Flexbox for inline items */
+      gap: 10px;
+      /* Optional: Adds space between items */
+    }
+
+    .icon-item {
+      /* Apply styling for individual items if needed */
+    }
+
+    .text-secondary {
+      color: #6c757d;
+      /* Example secondary text color, adjust as needed */
+    }
+
 
 
     @media only screen and (max-width: 1300px) {
@@ -103,6 +137,17 @@
         margin: 0 auto;
         /* Center the image */
       }
+
+      .profile-user-settings {
+        width: 100%;
+        /* Take full width to center content */
+        margin: 0 auto;
+        /* Center the element */
+        grid-column: 1 / -1;
+        /* Span across all columns if it's a grid item */
+      }
+
+
     }
   </style>
 
@@ -174,7 +219,30 @@
 <p>Please note that this website is currently under a constant state of maintenance. I will remove this when the site is more stable. Thanks!</p>
 </p>
 
+          <div class="social-media-icons">
+            <ul class="icon-list">
+              
+              <li class="icon-item">
+                <a href="https://instagram.com/thesmokinglion" rel="nofollow noopener" target="_blank">
+                  <i class="fab fa-instagram text-secondary"></i>
+                </a>
+              </li>
+              
+              <li class="icon-item">
+                <a href="https://www.youtube.com/@thesmokinglion5375&#34;" rel="nofollow noopener" target="_blank">
+                  <i class="fab fa-youtube text-secondary"></i>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+
         </div>
+
+
+        
+
+
 
       </div>
       <!-- End of profile section -->
@@ -187,11 +255,11 @@
 
   <main>
     <div class="container">
-        <div class="gallery">
-            
-            <a href="/article/vacation-disaster-and-harvesting-of-haze" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/eaf43d6792c04082af35c0dea3cb84d7.JPG" class="gallery-image" alt="Vacation Disaster and harvesting of Haze">
+      <div class="gallery">
+        
+        <a href="/article/vacation-disaster-and-harvesting-of-haze" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/eaf43d6792c04082af35c0dea3cb84d7.JPG" class="gallery-image" alt="Vacation Disaster and harvesting of Haze">
 
             <div class="gallery-item-type">
               
@@ -214,9 +282,9 @@
           </div>
         </a>
         
-            <a href="/article/almost-harvest-time-for-haze" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" class="gallery-image" alt="Almost Harvest time for Haze">
+        <a href="/article/almost-harvest-time-for-haze" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" class="gallery-image" alt="Almost Harvest time for Haze">
 
             <div class="gallery-item-type">
               
@@ -239,9 +307,9 @@
           </div>
         </a>
         
-            <a href="/article/growing-like-weeds" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/e721ff65e18a476aa2bb3b633ca1180a.JPG" class="gallery-image" alt="Growing like weeds">
+        <a href="/article/growing-like-weeds" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/e721ff65e18a476aa2bb3b633ca1180a.JPG" class="gallery-image" alt="Growing like weeds">
 
             <div class="gallery-item-type">
               
@@ -264,9 +332,9 @@
           </div>
         </a>
         
-            <a href="/article/haircut-for-the-ladies" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/9f81aa28f2a54ab7a38d6f25b8a1b8cc.png" class="gallery-image" alt="Haircut for the ladies">
+        <a href="/article/haircut-for-the-ladies" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/9f81aa28f2a54ab7a38d6f25b8a1b8cc.png" class="gallery-image" alt="Haircut for the ladies">
 
             <div class="gallery-item-type">
               
@@ -289,9 +357,9 @@
           </div>
         </a>
         
-            <a href="/article/new-seeds-have-arrived" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/b092b227f6bd4a62942d528ec31b6fd7.jpg" class="gallery-image" alt="New Seeds have arrived!">
+        <a href="/article/new-seeds-have-arrived" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/b092b227f6bd4a62942d528ec31b6fd7.jpg" class="gallery-image" alt="New Seeds have arrived!">
 
             <div class="gallery-item-type">
               
@@ -314,9 +382,9 @@
           </div>
         </a>
         
-            <a href="/article/automated-water-tank-refill" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/71b0e9c7552049b1bb9d493e7a680fce.jpg" class="gallery-image" alt="Automated Water tank refill">
+        <a href="/article/automated-water-tank-refill" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/71b0e9c7552049b1bb9d493e7a680fce.jpg" class="gallery-image" alt="Automated Water tank refill">
 
             <div class="gallery-item-type">
               
@@ -339,9 +407,9 @@
           </div>
         </a>
         
-            <a href="/article/automation-nation" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/4ee43cbe335f4f54b9a8431a07af0ed7.JPG" class="gallery-image" alt="Automation Nation">
+        <a href="/article/automation-nation" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/4ee43cbe335f4f54b9a8431a07af0ed7.JPG" class="gallery-image" alt="Automation Nation">
 
             <div class="gallery-item-type">
               
@@ -364,9 +432,9 @@
           </div>
         </a>
         
-            <a href="/article/nutrient-burn-and-organization" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/9e9af7c0f84c4494b0df2bed9f2fe163.png" class="gallery-image" alt="Nutrient Burn and Organization">
+        <a href="/article/nutrient-burn-and-organization" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/9e9af7c0f84c4494b0df2bed9f2fe163.png" class="gallery-image" alt="Nutrient Burn and Organization">
 
             <div class="gallery-item-type">
               
@@ -389,9 +457,9 @@
           </div>
         </a>
         
-            <a href="/article/northern-lights-seedlings!" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/6ce7752e4b434d2db72020fe797509f0.jpg" class="gallery-image" alt="Northern Lights Seedlings!">
+        <a href="/article/northern-lights-seedlings!" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/6ce7752e4b434d2db72020fe797509f0.jpg" class="gallery-image" alt="Northern Lights Seedlings!">
 
             <div class="gallery-item-type">
               
@@ -414,9 +482,9 @@
           </div>
         </a>
         
-            <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/240f3381af544d41933ad3d85e8da693.png" class="gallery-image" alt="Amnesia and White Widow Photo Dump and updates!">
+        <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/240f3381af544d41933ad3d85e8da693.png" class="gallery-image" alt="Amnesia and White Widow Photo Dump and updates!">
 
             <div class="gallery-item-type">
               
@@ -439,9 +507,9 @@
           </div>
         </a>
         
-            <a href="/article/amnesia-and-white-widow-update" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/e45c0160384e4be5ba56f9f60225da3e.JPG" class="gallery-image" alt="Amnesia and White Widow Update">
+        <a href="/article/amnesia-and-white-widow-update" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/e45c0160384e4be5ba56f9f60225da3e.JPG" class="gallery-image" alt="Amnesia and White Widow Update">
 
             <div class="gallery-item-type">
               
@@ -464,9 +532,9 @@
           </div>
         </a>
         
-            <a href="/article/white-widows-transferred-to-napkin!" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/79e7b198f8af4c7080ac14f9ed6739e8.jpg" class="gallery-image" alt="White widows transferred to napkin!">
+        <a href="/article/white-widows-transferred-to-napkin!" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/79e7b198f8af4c7080ac14f9ed6739e8.jpg" class="gallery-image" alt="White widows transferred to napkin!">
 
             <div class="gallery-item-type">
               
@@ -489,9 +557,9 @@
           </div>
         </a>
         
-            <a href="/article/good-bye-liberty-haze-and-hello-white-widow" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/c38daf70090e456491b390c8a00eff4c.jpg" class="gallery-image" alt="Good bye Liberty haze and hello white widow ">
+        <a href="/article/good-bye-liberty-haze-and-hello-white-widow" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/c38daf70090e456491b390c8a00eff4c.jpg" class="gallery-image" alt="Good bye Liberty haze and hello white widow ">
 
             <div class="gallery-item-type">
               
@@ -514,9 +582,9 @@
           </div>
         </a>
         
-            <a href="/article/liberty-haze-and-amnesia-update" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/237f25b51b604575996127545a83183e.JPG" class="gallery-image" alt="Liberty Haze and Amnesia update">
+        <a href="/article/liberty-haze-and-amnesia-update" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/237f25b51b604575996127545a83183e.JPG" class="gallery-image" alt="Liberty Haze and Amnesia update">
 
             <div class="gallery-item-type">
               
@@ -539,9 +607,9 @@
           </div>
         </a>
         
-            <a href="/article/amnesia-survivor-seedling" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/fab4a168dd9545279e65fee1e447aff2.jpg" class="gallery-image" alt="Amnesia Survivor Seedling ">
+        <a href="/article/amnesia-survivor-seedling" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/fab4a168dd9545279e65fee1e447aff2.jpg" class="gallery-image" alt="Amnesia Survivor Seedling ">
 
             <div class="gallery-item-type">
               
@@ -564,9 +632,9 @@
           </div>
         </a>
         
-            <a href="/article/liberty-haze-into-trays" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/277dc3c9b85248938844284147625b0c.jpg" class="gallery-image" alt="Liberty Haze into trays">
+        <a href="/article/liberty-haze-into-trays" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/277dc3c9b85248938844284147625b0c.jpg" class="gallery-image" alt="Liberty Haze into trays">
 
             <div class="gallery-item-type">
               
@@ -589,9 +657,9 @@
           </div>
         </a>
         
-            <a href="/article/liberty-haze-moved-seeds-to-paper-towels" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/c19e885c5cd44b339ad8702dfd113ad3.jpg" class="gallery-image" alt="Liberty Haze - moved seeds to paper towels ">
+        <a href="/article/liberty-haze-moved-seeds-to-paper-towels" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/c19e885c5cd44b339ad8702dfd113ad3.jpg" class="gallery-image" alt="Liberty Haze - moved seeds to paper towels ">
 
             <div class="gallery-item-type">
               
@@ -614,9 +682,9 @@
           </div>
         </a>
         
-            <a href="/article/amnesia-disaster" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/0684395d30e74659916807911ddac296.jpg" class="gallery-image" alt="Amnesia disaster">
+        <a href="/article/amnesia-disaster" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/0684395d30e74659916807911ddac296.jpg" class="gallery-image" alt="Amnesia disaster">
 
             <div class="gallery-item-type">
               
@@ -639,9 +707,9 @@
           </div>
         </a>
         
-            <a href="/article/prepping-soil-for-amnesia-seedlings-to-transplant" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/9126d4fa138e478fa8711cdbe6bd2a5a.jpg" class="gallery-image" alt="Prepping soil for Amnesia seedlings to transplant">
+        <a href="/article/prepping-soil-for-amnesia-seedlings-to-transplant" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/9126d4fa138e478fa8711cdbe6bd2a5a.jpg" class="gallery-image" alt="Prepping soil for Amnesia seedlings to transplant">
 
             <div class="gallery-item-type">
               
@@ -664,9 +732,9 @@
           </div>
         </a>
         
-            <a href="/article/amnesia-seed-sproutlings" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/6f3960d52dc0413e90f54cb029efe763.jpg" class="gallery-image" alt="Amnesia Seed sproutlings ">
+        <a href="/article/amnesia-seed-sproutlings" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/6f3960d52dc0413e90f54cb029efe763.jpg" class="gallery-image" alt="Amnesia Seed sproutlings ">
 
             <div class="gallery-item-type">
               
@@ -689,9 +757,9 @@
           </div>
         </a>
         
-            <a href="/article/amnesia-seedlings-starting-to-sprout" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/446640d5256b40c5baa2ebeaeae23fb7.jpg" class="gallery-image" alt="Amnesia Seedlings starting to sprout">
+        <a href="/article/amnesia-seedlings-starting-to-sprout" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/446640d5256b40c5baa2ebeaeae23fb7.jpg" class="gallery-image" alt="Amnesia Seedlings starting to sprout">
 
             <div class="gallery-item-type">
               
@@ -714,9 +782,9 @@
           </div>
         </a>
         
-            <a href="/article/growing-products-that-i-bought-to-start-my-growing-journey" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/aaf35d47bdac42449fd89d9478b26ecd.png" class="gallery-image" alt="Growing Products that I bought to start my growing journey">
+        <a href="/article/growing-products-that-i-bought-to-start-my-growing-journey" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/aaf35d47bdac42449fd89d9478b26ecd.png" class="gallery-image" alt="Growing Products that I bought to start my growing journey">
 
             <div class="gallery-item-type">
               
@@ -739,9 +807,9 @@
           </div>
         </a>
         
-            <a href="/article/maui-waui-grow-photos" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/522ef44df5294e06ac720dcd3ca68d01.jpg" class="gallery-image" alt="Maui Waui Grow Photos">
+        <a href="/article/maui-waui-grow-photos" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/522ef44df5294e06ac720dcd3ca68d01.jpg" class="gallery-image" alt="Maui Waui Grow Photos">
 
             <div class="gallery-item-type">
               
@@ -764,9 +832,9 @@
           </div>
         </a>
         
-            <a href="/article/cannabis-growth-terminology" class="gallery-link" tabindex="0">
-                <div class="gallery-item">
-                    <img src="https://grow.thesmokinglion.com/_resources/b2e64e07d4b84412a8f9fd3f2e12f208.png" class="gallery-image" alt="Cannabis Growth Terminology">
+        <a href="/article/cannabis-growth-terminology" class="gallery-link" tabindex="0">
+          <div class="gallery-item">
+            <img src="https://grow.thesmokinglion.com/_resources/b2e64e07d4b84412a8f9fd3f2e12f208.png" class="gallery-image" alt="Cannabis Growth Terminology">
 
             <div class="gallery-item-type">
               
