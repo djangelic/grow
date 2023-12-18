@@ -59,6 +59,40 @@
       /* Center the text */
     }
 
+    /* Desktop hover state */
+    .gallery-item:hover .gallery-item-info,
+    .gallery-item:focus .gallery-item-info {
+      /* Your hover styles here */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      /* Other styles as needed */
+    }
+
+    /* Mobile always "active" state */
+    @media (max-width: 768px) {
+
+      /* Adjust as needed for your mobile breakpoint */
+      .gallery-item .gallery-item-info {
+        /* Same styles as your hover state */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        /* Other styles as needed */
+      }
+    }
+
+
     .social-media-icons {
       display: flex;
       /* Use Flexbox to center the list */
@@ -300,18 +334,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Vacation Disaster and harvesting of Haze
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> December 10th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Vacation Disaster and harvesting of Haze
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> December 10th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -333,18 +367,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Almost Harvest time for Haze
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 24th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Almost Harvest time for Haze
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 24th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -366,18 +400,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Growing like weeds
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 22nd, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Growing like weeds
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 22nd, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -399,18 +433,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Haircut for the ladies
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 19th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Haircut for the ladies
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 19th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -432,18 +466,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> New Seeds have arrived!
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 11th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> New Seeds have arrived!
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 11th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -465,18 +499,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Automated Water tank refill
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 4th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Automated Water tank refill
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> November 4th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -498,18 +532,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Automation Nation
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 25th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Automation Nation
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 25th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -531,18 +565,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Nutrient Burn and Organization
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 23rd, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Nutrient Burn and Organization
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 23rd, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -564,18 +598,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Northern Lights Seedlings!
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 17th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Northern Lights Seedlings!
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 17th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -597,18 +631,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia and White Widow Photo Dump and updates!
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 15th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia and White Widow Photo Dump and updates!
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> October 15th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -630,18 +664,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia and White Widow Update
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 28th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia and White Widow Update
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 28th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -663,18 +697,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> White widows transferred to napkin!
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 25th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> White widows transferred to napkin!
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 25th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -696,18 +730,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Good bye Liberty haze and hello white widow 
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 25th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Good bye Liberty haze and hello white widow 
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 25th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -729,18 +763,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Liberty Haze and Amnesia update
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 19th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Liberty Haze and Amnesia update
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 19th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -762,18 +796,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia Survivor Seedling 
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 17th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia Survivor Seedling 
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 17th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -795,18 +829,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Liberty Haze into trays
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 15th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Liberty Haze into trays
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 15th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -828,18 +862,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Liberty Haze - moved seeds to paper towels 
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 13th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Liberty Haze - moved seeds to paper towels 
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 13th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -861,18 +895,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia disaster
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 12th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia disaster
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 12th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -894,18 +928,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Prepping soil for Amnesia seedlings to transplant
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 6th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Prepping soil for Amnesia seedlings to transplant
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 6th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -927,18 +961,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia Seed sproutlings 
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 4th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia Seed sproutlings 
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 4th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -960,18 +994,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia Seedlings starting to sprout
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 3rd, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Amnesia Seedlings starting to sprout
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 3rd, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -993,18 +1027,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Growing Products that I bought to start my growing journey
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 2nd, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Growing Products that I bought to start my growing journey
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> September 2nd, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -1026,18 +1060,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Maui Waui Grow Photos
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> June 26th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Maui Waui Grow Photos
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> June 26th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
@@ -1059,18 +1093,18 @@
 
             <div class="gallery-item-info">
               <ul>
-                  <li class="gallery-item-likes">
-                      <span class="visually-hidden">Title:</span>
-                      <i class="fas fa-bookmark" aria-hidden="true"></i> Cannabis Growth Terminology
-                  </li>
-                  <li class="gallery-item-comments">
-                      <span class="visually-hidden">Created:</span>
-                      <i class="fas fa-calendar-alt" aria-hidden="true"></i> May 17th, 2023
-                  </li>
-                  <!-- Add other items such as tags here -->
+                <li class="gallery-item-likes">
+                  <span class="visually-hidden">Title:</span>
+                  <i class="fas fa-bookmark" aria-hidden="true"></i> Cannabis Growth Terminology
+                </li>
+                <li class="gallery-item-comments">
+                  <span class="visually-hidden">Created:</span>
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> May 17th, 2023
+                </li>
+                <!-- Add other items such as tags here -->
               </ul>
-          </div>
-          
+            </div>
+
           </div>
         </a>
         
