@@ -1,522 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<link rel="stylesheet" href="/_assets/main.css" />
+<!DOCTYPE html>
+<html lang='en' class=''>
 
-  <!-- Analytics Tracking Code Section -->
-  
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-  <style type="text/css">
-    .custombody {
-      color: #FFFFFF !important;
-      font-family: 'Open Sans', sans-serif;
+<head>
+
+  <meta charset='UTF-8'>
+  <title>Gallery</title>
+
+  <meta name="robots" content="noindex">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/_assets/Brand.svg">
+  <link rel="mask-icon" href="/_assets/Brand.svg" color="#111">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <!-- ... other head tags ... -->
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="/_assets/instagram.css">
+
+
+  <!-- External JavaScript -->
+  <script src="/_assets/originaljs.js"></script>
+
+  <!--Style-->
+  <style>
+    .queried-tag-title::before {
+      content: "#";
+      /* Add any additional styling necessary to match the design of the element's text */
+    }
+
+    .queried-tag-title {
+      display: inline-block;
+      /* same as .profile-user-name */
+      font-size: 3.2rem;
+      /* same as .profile-user-name, which might be 32px based on the root font-size */
+      font-weight: 300;
+      /* same as .profile-user-name */
+      text-align: center;
+      /* assuming you want to center it as in .profile-user-settings */
+      color: #FFFFFF;
+      /* as defined in body for light themes */
+      /* The following are global styles that apply to all elements */
+      font-family: "Open Sans", Arial, sans-serif;
+      /* inherited from body */
+      background-color: #292c30;
+      /* you have two conflicting background colors, choose one */
+      /* Additional styles if needed */
+    }
+
+
+
+    .profile-divider {
+      border: 0;
+      height: 1px;
+      /* Thickness of the divider */
+      background-color: white;
+      /* Gradient effect */
+      margin-top: 20px;
+      /* Space above the divider */
+      margin-bottom: 20px;
+      /* Space below the divider */
+    }
+
+    .profile-stats ul {
+      display: flex;
+      justify-content: center;
+      /* This will center the menu items horizontally */
+      padding: 0px;
+      /* Remove padding to ensure the list is truly centered */
+      list-style-type: none;
+      /* Remove bullet points from list items */
+    }
+
+    .profile-stats li {
+      margin: 0px;
+      /* Adjust margins as necessary */
+      padding: 0 20px;
+      /* 0 padding for top and bottom, 20px padding for left and right */
+      /* Add other styles for your menu items here */
+    }
+
+    .text-capitalize {
+      text-transform: capitalize;
+    }
+
+    .profile-stats ul {
+      display: flex;
+      justify-content: center;
+      /* This will center the menu items horizontally */
+      padding: 0px;
+      /* Remove padding to ensure the list is truly centered */
+      list-style-type: none;
+      /* Remove bullet points from list items */
+    }
+
+    .profile-stats li {
+      margin: 0px;
+      /* Adjust margins as necessary */
+      padding: 0 20px;
+      /* 0 padding for top and bottom, 20px padding for left and right */
+      /* Add other styles for your menu items here */
+    }
+
+    .gallery-image {
+      width: 100%;
+      /* Adjust as necessary */
+      height: 285px;
+      /* Set a fixed height */
+      object-fit: cover;
+      /* This will ensure images cover the area nicely, but it makes the images look grainy. Cover makes them auto fit, and contain makes them look nicer. set this as a user parameter in the page settings. */
+    }
+
+    .fa {
+      text-shadow: 4px 4px 8px rgb(0, 0, 0);
+    }
+
+
+    body {
+      font-family: "Open Sans", Arial, sans-serif;
+      min-height: 100vh;
       background-color: #292c30 !important;
       background-image: none !important;
-      background-size: cover;
+      color: #FFFFFF;
+      padding-bottom: 3rem;
+    }
+
+    body a {
+      color: #ffcd34 !important;
+    }
+
+    .profile-user-settings {
       text-align: center;
     }
 
-    .custombody h1,
-    .custombody h2,
-    .custombody h3,
-    .custombody h4,
-    .custombody h5,
-    .custombody h6 {
-      color: #fcca20;
+    .profile-bio {
+      text-align: center;
+      /* Center the text */
     }
 
-    .custombody p,
-    .custombody .article-info,
-    .custombody .article-info strong,
-    .custombody .article-info time {
-      color: #FFFFFF;
-    }
-
-    .custombody img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-bottom: 20px;
-    }
-
-    img {
-      width: px !important;
-      height: px !important;
-    }
-
-    .btn,
-    .border {
-      background-color: #fcca20 !important;
-    }
-
-    .btn.btn-outline-info,
-    img.rounded-circle.img-thumbnail.border,
-    .btn-lg {
-      background-color: transparent !important;
-      color: #211d1d !important;
-      border-color: #fcca20 !important;
-      border-radius: 5px;
-    }
-
-    .btn.btn-outline-info:hover {
-      background-color: #fcca20 !important;
-      color: white !important;
-      border-color: #fcca20 !important;
-    }
-
-    .btn.custom {
-      background-color: #fcca20 !important;
-      color: #211d1d !important;
-    }
-
-    body {
-      font-family: 'Open Sans', sans-serif;
-      color: #FFFFFF !important;
-      background-color: #292c30 !important;
-      background-image: url() !important;
-    }
-
-    body.custombody {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #292c30 !important;
-      background-image: none !important;
-      background-size: cover;
-    }
-
-    .custombody .article-content table {
-      color: #FFFFFF;
-      background-color: #292c30 transparent;
-    }
-
-    .custombody a,
-    body a {
-      color: #ffcd34;
-    }
-
-    .btn-custom-margin {
-      margin-top: 4px;
-      /* 8px margin on the top */
-      margin-bottom: 4px;
-      /* 8px margin on the bottom */
-      /* Add horizontal margins if needed */
-      margin-left: 4px;
-      /* 8px margin on the left */
-      margin-right: 4px;
-      /* 8px margin on the right */
-    }
-
-    .row.no-gutter {
-      --bs-gutter-x: 0;
+    /* Desktop hover state */
+    .gallery-item:hover .gallery-item-info,
+    .gallery-item:focus .gallery-item-info {
+      /* Your hover styles here */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      /* Other styles as needed */
     }
 
 
+    /* Mobile always "active" state */
+    @media (max-width: 768px) {
 
-    .custombody .keyword.badge.badge-info,
-    body .keyword.badge.badge-info {
-      background-color: #fcca20 !important;
-      color: #211d1d !important;
-      border-color: #fcca20 !important;
-    }
-
-    .custombody .keyword.badge.badge-info:hover,
-    .btn.custom:hover,
-    body .keyword.badge.badge-info:hover {
-      background-color: #83171c !important;
-      color: white !important;
-    }
-
-    @media max-width 576px {
-
-      .custombody h1,
-      .custombody h2,
-      .custombody h3,
-      .custombody h4,
-      .custombody h5,
-      .custombody h6 {
-        color: #fcca20 !important;
-      }
-
-      .custombody,
-      .custombody p,
-      .custombody .article-info,
-      .custombody .article-info strong,
-      .custombody .article-info time {
-        color: #FFFFFF !important;
-      }
-
-      .custombody a {
-        color: #ffcd34 !important;
-      }
-
-      .custombody img {
-        border-radius: 5px;
+      /* Adjust as needed for your mobile breakpoint */
+      .gallery-item .gallery-item-info {
+        /* Same styles as your hover state */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        /* Other styles as needed */
       }
     }
 
-    /* Custom Navbar Styles */
-    .navbar-custom {
-      background-color: #fcca20;
-      font-family: 'Open Sans', sans-serif;
-      /* Navbar background */
+
+    .social-media-icons {
+      display: flex;
+      /* Use Flexbox to center the list */
+      justify-content: center;
+      /* Center horizontally */
+      align-items: center;
+      /* Center vertically (if needed) */
+      margin-top: 1rem;
+      /* Spacing from the top, equivalent to mt-4 */
     }
 
-    /* Core navbar-brand style */
-    .navbar-brand {
-      color: #000000 !important;
-      /* Site name color */
-      /* Additional non-conditional styles here if necessary */
+    .icon-list {
+      list-style-type: none;
+      /* Remove default list styling */
+      padding: 0;
+      /* Remove default padding */
+      margin: 0;
+      /* Remove default margin */
+      display: flex;
+      /* Use Flexbox for inline items */
+      gap: 10px;
+      /* Optional: Adds space between items */
     }
 
-    /* Conditional styling for navigation image */
-    .navbar-brand {
-        background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
-        background-size: 30px 50px;
-        padding-left: 45px;
-        /* Adjust padding */
-      }
-
-      
-
-    /* Navbar link styles */
-    .navbar-custom .navbar-nav .nav-link {
-      color: #211d1d;
-      /* Nav item color */
-      padding-top: 0.5rem;
-      /* Adjust top padding */
-      padding-bottom: 0.5rem;
-      /* Adjust bottom padding */
-    }
-
-    .navbar-custom .navbar-nav .nav-link:hover,
-    .navbar-custom .navbar-nav .nav-link.active {
-      background-color: #83171c;
-      /* Nav item hover and active background */
+    .gallery-item {
+      position: relative;
+      min-width: 22rem;
+      /* Ensures the item is never smaller than 22rem */
+      margin: 1rem;
       color: #fff;
+      cursor: pointer;
     }
 
-    /* Navbar toggler icon style */
-    .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    .gallery-item:hover .gallery-item-info,
+    .gallery-item:focus .gallery-item-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* Add this to ensure it starts from the very left */
+      right: 0;
+      /* Add this to ensure it stretches to the very right */
+      bottom: 0;
+      /* Add this to ensure it stretches to the very bottom */
+      background-color: rgba(0, 0, 0, 0.3);
     }
 
-    /* For mobile screens, center the collapsed navbar content */
-    @media (max-width: 991px) {
-      .navbar-custom .navbar-nav {
-        flex-direction: column;
-        /* Stack nav items vertically */
-        width: 100%;
-        /* Full width of nav items */
+
+
+    .icon-item {
+      /* Apply styling for individual items if needed */
+    }
+
+    .text-secondary {
+      color: #6c757d;
+      /* Example secondary text color, adjust as needed */
+    }
+
+    @media (max-width: 40rem) {
+      .profile-user-settings {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* This sets it to a single column layout */
+        /* Or if you want to disable grid layout entirely: */
+        /* display: block; */
+        grid-gap: 1rem;
       }
+    }
 
-      .navbar-custom .navbar-nav .nav-item,
-      .navbar-custom .navbar-nav .nav-link {
+    @media only screen and (max-width: 1300px) {
+
+      .profile-image,
+      .profile-user-settings,
+      .profile-stats,
+      .profile-bio {
         width: 100%;
-        /* Full width for each item */
         text-align: center;
-        /* Center text for each item */
-      }
-    }
-
-    /* For desktop screens, align the menu items to the left next to the brand */
-    @media (min-width: 992px) {
-      .navbar-custom .navbar-nav {
-        flex-direction: row;
-        /* Align nav items in a row */
-        justify-content: flex-start;
-        /* Align nav items to the start (left) */
       }
 
-      .navbar-custom .navbar-nav .nav-item {
-        margin-right: .5rem;
-        /* Space between nav items */
+      .profile {
+        display: block;
       }
 
-      /* Remove specific width settings on desktop for .nav-item and .nav-link */
+      .profile-image {
+        margin: 0 auto;
+        /* Center the image */
+      }
+
+      .profile-user-settings,
+      .profile-stats,
+      .profile-bio {
+        margin-top: 20px;
+        /* Adds some space between the elements */
+      }
+
+      .profile-bio {
+        text-align: center;
+        /* Center the text */
+      }
+
+      .profile-image img {
+        width: 100%;
+        /* Make the image take the full width of its container */
+        height: auto;
+        /* Set height to auto to maintain the aspect ratio */
+        object-fit: contain;
+        /* This makes sure the entire image is always visible, and maintained aspect ratio */
+        display: block;
+        /* Ensure the image is a block-level element */
+        margin: 0 auto;
+        /* Center the image */
+      }
+
     }
   </style>
-  <title>Tags - The Smoking Lion Grow Blog</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
 </head>
+
 <!-- Bootstrap Navbar with Custom Class -->
 <!-- Bootstrap Navbar with Custom Class -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">The Smoking Lion Grow Blog</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <ul class="navbar-nav">
-        
-        <li class="nav-item">
-          <a class="nav-link " href="/archives">
-            Journal
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="/links">
-            Links
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="/tags">
-            Tags
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="/about">
-            About
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="/gallery">
-            Gallery
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <body>
-  <div class="tags-list-block container mt-4">
-    <!-- Tagged Articles List -->
-    <div class="tag-block mb-4" id="tagged-articles">
-      <h2 class="queried-tag-title"></h2>
-      <ul class="list-unstyled">
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - harvest grow - northern lights grow - amnesia">
-          <time datetime="1702236702255" class="mr-2 text-muted">
-            12-10-2023
-          </time>
-          <a href="/article/vacation-disaster-and-harvesting-of-haze">
-            Vacation Disaster and harvesting of Haze
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - northern lights grow - amnesia">
-          <time datetime="1700884120520" class="mr-2 text-muted">
-            11-24-2023
-          </time>
-          <a href="/article/almost-harvest-time-for-haze">
-            Almost Harvest time for Haze
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - northern lights grow - amnesia">
-          <time datetime="1700636400000" class="mr-2 text-muted">
-            11-22-2023
-          </time>
-          <a href="/article/growing-like-weeds">
-            Growing like weeds
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - northern lights grow - amnesia">
-          <time datetime="1700462231601" class="mr-2 text-muted">
-            11-19-2023
-          </time>
-          <a href="/article/haircut-for-the-ladies">
-            Haircut for the ladies
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - northern lights grow - amnesia grow - white widow">
-          <time datetime="1699719151747" class="mr-2 text-muted">
-            11-11-2023
-          </time>
-          <a href="/article/new-seeds-have-arrived">
-            New Seeds have arrived!
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - amnesia grow - northern lights">
-          <time datetime="1699115814875" class="mr-2 text-muted">
-            11-04-2023
-          </time>
-          <a href="/article/automated-water-tank-refill">
-            Automated Water tank refill
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - northern lights grow - amnesia">
-          <time datetime="1698252270589" class="mr-2 text-muted">
-            10-25-2023
-          </time>
-          <a href="/article/automation-nation">
-            Automation Nation
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - northern lights grow - amnesia">
-          <time datetime="1698126463551" class="mr-2 text-muted">
-            10-23-2023
-          </time>
-          <a href="/article/nutrient-burn-and-organization">
-            Nutrient Burn and Organization
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - northern lights">
-          <time datetime="1697526000000" class="mr-2 text-muted">
-            10-17-2023
-          </time>
-          <a href="/article/northern-lights-seedlings!">
-            Northern Lights Seedlings!
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - amnesia">
-          <time datetime="1697402014431" class="mr-2 text-muted">
-            10-15-2023
-          </time>
-          <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!">
-            Amnesia and White Widow Photo Dump and updates!
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - amnesia">
-          <time datetime="1695923156273" class="mr-2 text-muted">
-            09-28-2023
-          </time>
-          <a href="/article/amnesia-and-white-widow-update">
-            Amnesia and White Widow Update
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow">
-          <time datetime="1695707814718" class="mr-2 text-muted">
-            09-25-2023
-          </time>
-          <a href="/article/white-widows-transferred-to-napkin!">
-            White widows transferred to napkin!
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - white widow grow - amnesia">
-          <time datetime="1695657246309" class="mr-2 text-muted">
-            09-25-2023
-          </time>
-          <a href="/article/good-bye-liberty-haze-and-hello-white-widow">
-            Good bye Liberty haze and hello white widow 
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - liberty haze grow - amnesia">
-          <time datetime="1695142066256" class="mr-2 text-muted">
-            09-19-2023
-          </time>
-          <a href="/article/liberty-haze-and-amnesia-update">
-            Liberty Haze and Amnesia update
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - amnesia">
-          <time datetime="1694968206943" class="mr-2 text-muted">
-            09-17-2023
-          </time>
-          <a href="/article/amnesia-survivor-seedling">
-            Amnesia Survivor Seedling 
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - liberty haze">
-          <time datetime="1694801442386" class="mr-2 text-muted">
-            09-15-2023
-          </time>
-          <a href="/article/liberty-haze-into-trays">
-            Liberty Haze into trays
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - liberty haze">
-          <time datetime="1694658737748" class="mr-2 text-muted">
-            09-13-2023
-          </time>
-          <a href="/article/liberty-haze-moved-seeds-to-paper-towels">
-            Liberty Haze - moved seeds to paper towels 
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - liberty haze grow - amnesia">
-          <time datetime="1694544969911" class="mr-2 text-muted">
-            09-12-2023
-          </time>
-          <a href="/article/amnesia-disaster">
-            Amnesia disaster
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - amnesia">
-          <time datetime="1694015127397" class="mr-2 text-muted">
-            09-06-2023
-          </time>
-          <a href="/article/prepping-soil-for-amnesia-seedlings-to-transplant">
-            Prepping soil for Amnesia seedlings to transplant
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="journal - grow grow - amnesia">
-          <time datetime="1693889571524" class="mr-2 text-muted">
-            09-04-2023
-          </time>
-          <a href="/article/amnesia-seed-sproutlings">
-            Amnesia Seed sproutlings 
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="journal - grow grow - amnesia">
-          <time datetime="1693798509892" class="mr-2 text-muted">
-            09-03-2023
-          </time>
-          <a href="/article/amnesia-seedlings-starting-to-sprout">
-            Amnesia Seedlings starting to sprout
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="journal - grow">
-          <time datetime="1693701024728" class="mr-2 text-muted">
-            09-02-2023
-          </time>
-          <a href="/article/growing-products-that-i-bought-to-start-my-growing-journey">
-            Growing Products that I bought to start my growing journey
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - maui waui">
-          <time datetime="1687762800000" class="mr-2 text-muted">
-            06-26-2023
-          </time>
-          <a href="/article/maui-waui-grow-photos">
-            Maui Waui Grow Photos
-          </a>
-        </li>
-        
-        <li class="mb-2 article" data-tags="grow - tips">
-          <time datetime="1684306800000" class="mr-2 text-muted">
-            05-17-2023
-          </time>
-          <a href="/article/cannabis-growth-terminology">
-            Cannabis Growth Terminology
-          </a>
-        </li>
-        
-      </ul>
-    </div>
-  </div>
+  <header>
+    <div class="container">
+      <div class="profile">
+        <div class="profile-image">
+          <a href="/"><img src="/_assets/Brand.svg" alt="" width="100%"></a>
+        </div>
+        <div class="profile-user-settings">
+          <h1 class="queried-tag-title text-center" style="text-transform: capitalize;"></h1>
+        </div>
+        <div class="profile-stats">
+          <ul class="navbar-nav">
+            
+            <li class="nav-item">
+              <a class="nav-link" href="profile">
+                Profile
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="tags">
+                 Tags
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="index">
+                Links
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="profile-bio">
+          <p>Below are all the articles using this #tag </p>
+          <div class="social-media-icons">
+            <ul class="icon-list">
+              
+              <li class="icon-item">
+                <a href="https://instagram.com/thesmokinglion" rel="nofollow noopener" target="_blank">
+                  <i class="fab fa-instagram text-secondary"></i>
+                </a>
+              </li>
+              
+              <li class="icon-item">
+                <a href="https://www.youtube.com/@thesmokinglion5375" rel="nofollow noopener" target="_blank">
+                  <i class="fab fa-youtube text-secondary"></i>
+                </a>
+              </li>
+              
+            </ul>
+          </div>
 
-  <!-- Client-side JavaScript -->
+        </div>
+
+      </div> <!-- End of profile section -->
+      <hr class="profile-divider"> <!-- Divider added here -->
+    </div> <!-- End of container -->
+
+    </div>
+    <!-- End of profile section -->
+
+
+
+    </div>
+    <!-- End of container -->
+
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div id="tagged-articles">
+        <div class="gallery">
+          
+          <div class="gallery-item article" data-tags="">
+            <a href="/article/new-year-new-excitement" class="gallery-link" tabindex="0">
+              <img src="/_resources/0af54b241d6142bdbb9813cbbd181db3.jpg" class="gallery-image" alt="New year, new excitement">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - harvest grow - northern lights grow - amnesia">
+            <a href="/article/vacation-disaster-and-harvesting-of-haze" class="gallery-link" tabindex="0">
+              <img src="/_resources/eaf43d6792c04082af35c0dea3cb84d7.JPG" class="gallery-image" alt="Vacation Disaster and harvesting of Haze">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - northern lights grow - amnesia">
+            <a href="/article/almost-harvest-time-for-haze" class="gallery-link" tabindex="0">
+              <img src="/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" class="gallery-image" alt="Almost Harvest time for Haze">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - northern lights grow - amnesia">
+            <a href="/article/growing-like-weeds" class="gallery-link" tabindex="0">
+              <img src="/_resources/e721ff65e18a476aa2bb3b633ca1180a.JPG" class="gallery-image" alt="Growing like weeds">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - northern lights grow - amnesia">
+            <a href="/article/haircut-for-the-ladies" class="gallery-link" tabindex="0">
+              <img src="/_resources/9f81aa28f2a54ab7a38d6f25b8a1b8cc.png" class="gallery-image" alt="Haircut for the ladies">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - northern lights grow - amnesia grow - white widow">
+            <a href="/article/new-seeds-have-arrived" class="gallery-link" tabindex="0">
+              <img src="/_resources/b092b227f6bd4a62942d528ec31b6fd7.jpg" class="gallery-image" alt="New Seeds have arrived!">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - amnesia grow - northern lights">
+            <a href="/article/automated-water-tank-refill" class="gallery-link" tabindex="0">
+              <img src="/_resources/71b0e9c7552049b1bb9d493e7a680fce.jpg" class="gallery-image" alt="Automated Water tank refill">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - northern lights grow - amnesia">
+            <a href="/article/automation-nation" class="gallery-link" tabindex="0">
+              <img src="/_resources/4ee43cbe335f4f54b9a8431a07af0ed7.JPG" class="gallery-image" alt="Automation Nation">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - northern lights grow - amnesia">
+            <a href="/article/nutrient-burn-and-organization" class="gallery-link" tabindex="0">
+              <img src="/_resources/9e9af7c0f84c4494b0df2bed9f2fe163.png" class="gallery-image" alt="Nutrient Burn and Organization">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - northern lights">
+            <a href="/article/northern-lights-seedlings!" class="gallery-link" tabindex="0">
+              <img src="/_resources/6ce7752e4b434d2db72020fe797509f0.jpg" class="gallery-image" alt="Northern Lights Seedlings!">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - amnesia">
+            <a href="/article/amnesia-and-white-widow-photo-dump-and-updates!" class="gallery-link" tabindex="0">
+              <img src="/_resources/240f3381af544d41933ad3d85e8da693.png" class="gallery-image" alt="Amnesia and White Widow Photo Dump and updates!">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - amnesia">
+            <a href="/article/amnesia-and-white-widow-update" class="gallery-link" tabindex="0">
+              <img src="/_resources/e45c0160384e4be5ba56f9f60225da3e.JPG" class="gallery-image" alt="Amnesia and White Widow Update">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow">
+            <a href="/article/white-widows-transferred-to-napkin!" class="gallery-link" tabindex="0">
+              <img src="/_resources/79e7b198f8af4c7080ac14f9ed6739e8.jpg" class="gallery-image" alt="White widows transferred to napkin!">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - white widow grow - amnesia">
+            <a href="/article/good-bye-liberty-haze-and-hello-white-widow" class="gallery-link" tabindex="0">
+              <img src="/_resources/c38daf70090e456491b390c8a00eff4c.jpg" class="gallery-image" alt="Good bye Liberty haze and hello white widow ">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - liberty haze grow - amnesia">
+            <a href="/article/liberty-haze-and-amnesia-update" class="gallery-link" tabindex="0">
+              <img src="/_resources/237f25b51b604575996127545a83183e.JPG" class="gallery-image" alt="Liberty Haze and Amnesia update">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - amnesia">
+            <a href="/article/amnesia-survivor-seedling" class="gallery-link" tabindex="0">
+              <img src="/_resources/fab4a168dd9545279e65fee1e447aff2.jpg" class="gallery-image" alt="Amnesia Survivor Seedling ">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - liberty haze">
+            <a href="/article/liberty-haze-into-trays" class="gallery-link" tabindex="0">
+              <img src="/_resources/277dc3c9b85248938844284147625b0c.jpg" class="gallery-image" alt="Liberty Haze into trays">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - liberty haze">
+            <a href="/article/liberty-haze-moved-seeds-to-paper-towels" class="gallery-link" tabindex="0">
+              <img src="/_resources/c19e885c5cd44b339ad8702dfd113ad3.jpg" class="gallery-image" alt="Liberty Haze - moved seeds to paper towels ">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - liberty haze grow - amnesia">
+            <a href="/article/amnesia-disaster" class="gallery-link" tabindex="0">
+              <img src="/_resources/0684395d30e74659916807911ddac296.jpg" class="gallery-image" alt="Amnesia disaster">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - amnesia">
+            <a href="/article/prepping-soil-for-amnesia-seedlings-to-transplant" class="gallery-link" tabindex="0">
+              <img src="/_resources/9126d4fa138e478fa8711cdbe6bd2a5a.jpg" class="gallery-image" alt="Prepping soil for Amnesia seedlings to transplant">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="journal - grow grow - amnesia">
+            <a href="/article/amnesia-seed-sproutlings" class="gallery-link" tabindex="0">
+              <img src="/_resources/6f3960d52dc0413e90f54cb029efe763.jpg" class="gallery-image" alt="Amnesia Seed sproutlings ">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="journal - grow grow - amnesia">
+            <a href="/article/amnesia-seedlings-starting-to-sprout" class="gallery-link" tabindex="0">
+              <img src="/_resources/446640d5256b40c5baa2ebeaeae23fb7.jpg" class="gallery-image" alt="Amnesia Seedlings starting to sprout">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="journal - grow">
+            <a href="/article/growing-products-that-i-bought-to-start-my-growing-journey" class="gallery-link" tabindex="0">
+              <img src="/_resources/aaf35d47bdac42449fd89d9478b26ecd.png" class="gallery-image" alt="Growing Products that I bought to start my growing journey">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - maui waui">
+            <a href="/article/maui-waui-grow-photos" class="gallery-link" tabindex="0">
+              <img src="/_resources/522ef44df5294e06ac720dcd3ca68d01.jpg" class="gallery-image" alt="Maui Waui Grow Photos">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+          <div class="gallery-item article" data-tags="grow - tips">
+            <a href="/article/cannabis-growth-terminology" class="gallery-link" tabindex="0">
+              <img src="/_resources/b2e64e07d4b84412a8f9fd3f2e12f208.png" class="gallery-image" alt="Cannabis Growth Terminology">
+              <!-- Other gallery item info -->
+            </a>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </main>
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const urlParams = new URLSearchParams(window.location.search);
@@ -534,17 +573,10 @@
     });
   </script>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const articleContent = document.querySelector('.article-content');
-      articleContent.innerHTML = articleContent.innerHTML.replace(
-        /<a[^>]*href="https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)"[^>]*>.*?<\/a>/g,
-        '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></center>'
-      );
-    });
-  </script>
+
+
 </body>
+
+
 
 </html>

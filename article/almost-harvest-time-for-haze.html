@@ -2,18 +2,149 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<link rel="stylesheet" href="/_assets/main.css" />
-
-  <!-- Analytics Tracking Code Section -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    Almost Harvest time for Haze - Smoking Lion Bud Blog
+  </title>
   
-  <meta content="IE=edge" http-equiv="X-UA-Compatible">
-  <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-  <link href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" rel="stylesheet">
-  <style type="text/css">
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Almost Harvest time for Haze" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" />
+  <meta property="og:url" content="/article/almost-harvest-time-for-haze" />
+  <meta property="og:description" content="
+As our cannabis cultivation journey progresses, it&#39;s essential to pause and evaluate the growth of our plants. Observing Haze, our robust Amnesia strain, we can see significant development in size an" />
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /*background-color: #333333;*/
+      display: flex;
+      /* Use Flexbox */
+      justify-content: center;
+      /* Center items horizontally */
+      align-items: center;
+      /* Center items vertically (optional) */
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+
+    .left {
+      width: 50%;
+      height: 100vh;
+      background: linear-gradient(rgba(255, 255, 255, 0), #000000), url('/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .left .post-title {
+      position: absolute;
+      bottom: 10%;
+      left: 10px;
+      color: white;
+      font-size: 40px;
+    }
+
+    .left .meta {
+      position: absolute;
+      bottom: 5%;
+      left: 10px;
+      color: #eaeaea;
+      font-size: 20px;
+    }
+
+    .right {
+      width: 50%;
+      padding: 10px 5% 5% 5%;
+      overflow-y: auto;
+      text-align: left;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left,
+      .right {
+        width: 100%;
+        height: auto;
+      }
+
+      .left {
+        position: static;
+        /* This allows the left column to scroll */
+      }
+
+      .left .post-title,
+      .left .meta {
+        position: static;
+        /* Static position for title and meta on mobile */
+        font-size: 30px;
+        /* Adjusted font size for mobile */
+        padding: 10px;
+        /* Padding for spacing */
+      }
+
+      .left .meta {
+        font-size: 15px;
+        /* Adjusted font size for meta on mobile */
+      }
+
+      .right {
+        padding: 4%;
+        /* Reduced padding for mobile */
+      }
+    }
+
+    /* Additional styles for headers and paragraphs */
+    .right h1,
+    .right h2,
+    .right h3,
+    .right h4,
+    .right h5,
+    .right h6 {
+      font-family: 'Work Sans', sans-serif;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .right p {
+      margin-bottom: 20px;
+    }
+
     .custombody {
       color: #FFFFFF !important;
       font-family: 'Open Sans', sans-serif;
@@ -42,7 +173,7 @@
     .custombody img {
       max-width: 100%;
       height: auto;
-      border-radius: 5px;
+      border-radius: 4px;
       margin-bottom: 20px;
     }
 
@@ -62,7 +193,7 @@
       background-color: transparent !important;
       color: #211d1d !important;
       border-color: #fcca20 !important;
-      border-radius: 5px;
+      border-radius: 4px;
     }
 
     .btn.btn-outline-info:hover {
@@ -156,13 +287,13 @@
       }
 
       .custombody img {
-        border-radius: 5px;
+        border-radius: 4px;
       }
     }
 
     /* Custom Navbar Styles */
     .navbar-custom {
-      background-color: #fcca20;
+      /* background-color: #fcca20;*/
       font-family: 'Open Sans', sans-serif;
       /* Navbar background */
     }
@@ -176,9 +307,9 @@
 
     /* Conditional styling for navigation image */
     .navbar-brand {
-        background: url('https://thesmokinglion.com/wp-content/uploads/2023/09/Smoking-Lion-Brand-Yellow-Round-Social.svg') no-repeat left center;
-        background-size: 30px 50px;
-        padding-left: 45px;
+        /* background: url('/_assets/Brand.svg') no-repeat left center; */
+        background-size: px px;
+        padding-left: NaNpx;
         /* Adjust padding */
       }
 
@@ -242,110 +373,78 @@
     }
   </style>
 
-  <title>
-    Almost Harvest time for Haze - The Smoking Lion Grow Blog
-  </title>
-  
-  <!-- Open Graph Metadata -->
-  <meta property="og:title" content="Almost Harvest time for Haze" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://grow.thesmokinglion.comJPG" />
-  <meta property="og:url" content="https://grow.thesmokinglion.com/article/almost-harvest-time-for-haze" />
-  <meta property="og:description" content="
-As our cannabis cultivation journey progresses, it&#39;s essential to pause and evaluate the growth of our plants. Observing Haze, our robust Amnesia strain, we can see significant development in size an" />
+
+
 </head>
-<!-- Bootstrap Navbar with Custom Class -->
-<nav class="navbar navbar-expand-lg navbar-custom">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">The Smoking Lion Grow Blog</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="meta"><a href="/"><img src="/_assets/Brand.svg" width="100" height="100"></a></div>
+      <div class="meta"></div>
+    </div>
+    <div class="right">
       <ul class="navbar-nav">
         
         <li class="nav-item">
-          <a class="nav-link " href="/archives">
-            Journal
+          <a class="nav-link" href="/profile">
+            Profile
           </a>
         </li>
         
         <li class="nav-item">
-          <a class="nav-link " href="/links">
+          <a class="nav-link" href="/tags">
+             Tags
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/index">
             Links
           </a>
         </li>
         
-        <li class="nav-item">
-          <a class="nav-link " href="/tags">
-            Tags
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="/about">
-            About
-          </a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link " href="/gallery">
-            Gallery
-          </a>
-        </li>
-        
       </ul>
-    </div>
-  </div>
-</nav>
-
-<body class="custombody">
-
-  <div class="container mt-4">
-
-
-
-    <!-- Blog Title and Info -->
-    <div class="row justify-content-center">
-      <h1 class="article-title" style="text-align: center;">
-        Almost Harvest time for Haze
-      </h1>
-    </div>
-    <div class="row justify-content-center mt-2 custombody">
-      <div class="article-info">
-        <div>
-          <strong>Created At：</strong><time datetime="1700884120520">
-            2023-11-24 20:48
-          </time><br>
-          <strong>Updated At：</strong><time datetime="1700888526323">
-            2023-11-24 22:02
-          </time>
-        </div>
-        
-        <div>
-          <strong>Tags: </strong>
-          
-          <a href="/tag?tag=grow%20-%20white%20widow" class="keyword badge badge-info">
-            grow - white widow
-          </a>
-          
-          <a href="/tag?tag=grow%20-%20northern%20lights" class="keyword badge badge-info">
-            grow - northern lights
-          </a>
-          
-          <a href="/tag?tag=grow%20-%20amnesia" class="keyword badge badge-info">
-            grow - amnesia
-          </a>
-          
-        </div>
-        
+      <!-- Content for Column 2 -->
+      <!-- Blog Title and Info -->
+      <div class="row justify-content-center">
       </div>
-    </div>
+      <div class="row justify-content-center mt-2 custombody">
+        <h1>Almost Harvest time for Haze</h1>
+        <div class="article-info">
+          <div>
+            <strong>Last Updated：</strong><time datetime="1700888526323">
+              2023-11-24 22:02
+            </time> | 
+            <strong>Published:</strong><time datetime="1700884120520">
+              2023-11-24 20:48
+            </time>
+          </div>
+          <p>
+          <div>
+            <strong>Tags: </strong>
+            
+            <a href="/tag?tag=grow%20-%20white%20widow">
+              #grow - white widow,
+            </a>
+            
+            <a href="/tag?tag=grow%20-%20northern%20lights">
+              #grow - northern lights,
+            </a>
+            
+            <a href="/tag?tag=grow%20-%20amnesia">
+              #grow - amnesia,
+            </a>
+            
+          </div>
+          </p>
+        </div>
+      </div>
 
-    <!-- Blog Content -->
-    <div class="row mt-4 custombody">
-      <div class="col-lg-8 offset-lg-2 article-content markdown-body">
-        <img loading="lazy" src="/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" alt="IMG_8032.JPG" width="867" height="639" class="jop-noMdConv" />
+      <!-- Blog Content -->
+      <div class="row mt-4 custombody">
+        <div class="col-lg-8 offset-lg-2 article-content markdown-body">
+          <img loading="lazy" src="/_resources/380bdda0da9c4e52a6d6eece3ba1231d.JPG" alt="IMG_8032.JPG" width="867" height="639" class="jop-noMdConv" />
 <p>As our cannabis cultivation journey progresses, it's essential to pause and evaluate the growth of our plants. Observing Haze, our robust Amnesia strain, we can see significant development in size and structure.</p>
 <p>Haze was planted back on September 17th, 2023. We used a mix of Walmart and Amazon soil.</p>
 <img loading="lazy" src="/_resources/19643d9dc4ab4cd3b07d1ad95495bc2e.JPG" alt="IMG_8031.JPG" width="875" height="1167" class="jop-noMdConv" />
@@ -366,31 +465,33 @@ As our cannabis cultivation journey progresses, it&#39;s essential to pause and 
 <img loading="lazy" src="/_resources/c03f4f142d9040c8bfe80e8a9a71a2b4.JPG" alt="IMG_8046.JPG" width="877" height="758" class="jop-noMdConv" />
 <p>We have however started work on expanding our grow. I'm excited to see how big of a harvest we can get!</p>
 
+        </div>
+      </div>
+
+      <!-- Giscus Comments Section -->
+      
+
+      <!-- Return to Home Button -->
+      <div>
+        <a href="/archives" class="btn btn-outline-info btn-lg btn-block" style="margin-bottom: 20px;">Back to
+          Articles</a>
       </div>
     </div>
 
-    <!-- Giscus Comments Section -->
-    
 
-    <!-- Return to Home Button -->
-    <div>
-      <a href="/archives" class="btn btn-outline-info btn-lg btn-block" style="margin-bottom: 20px;">Back to
-        Articles</a>
-    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const articleContent = document.querySelector('.article-content');
+        articleContent.innerHTML = articleContent.innerHTML.replace(
+          /<a[^>]*href="https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)"[^>]*>.*?<\/a>/g,
+          '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></center>'
+        );
+      });
+    </script>
   </div>
-
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const articleContent = document.querySelector('.article-content');
-      articleContent.innerHTML = articleContent.innerHTML.replace(
-        /<a[^>]*href="https:\/\/www\.youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)"[^>]*>.*?<\/a>/g,
-        '<center><iframe width="560" height="315" src="https://www.youtube.com/embed/$1" frameborder="0" allowfullscreen></iframe></center>'
-      );
-    });
-  </script>
+  </div>
 </body>
 
 </html>
